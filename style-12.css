@@ -1,15 +1,19 @@
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none; box-sizing: border-box }
+html { height: 100% }
+body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block }
 
+/* Desktops */
+@media (min-width:768px) { .container-block { padding: 4% 18% } }
 
-/* Container for web page blocks */
-.container-block { padding: 50px 18% 50px 18% }
+/* Mobiles */
+@media (max-width:767px) { .container-block { padding: 12% 8% } }
 
 /* Main heading */
 .container-block h1 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 84px;
+    font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1600 - 320)));    
     color: #1435b3;
     letter-spacing: -3px;
     text-transform: uppercase;
@@ -20,7 +24,7 @@ img { width: 100%; height: auto; display: block }
 /* Smaller headings */
 .container-block h2 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 28px;
+    font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1600 - 320)));    
     color: #696969;
     line-height: 1.6;
     text-align: center;
@@ -30,7 +34,7 @@ img { width: 100%; height: auto; display: block }
 /* Smallest headings */
 .container-block h3 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 48px;
+    font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1600 - 320)));    
     letter-spacing: -3px;
     color: #000;
     margin-bottom: 12px;
@@ -39,11 +43,17 @@ img { width: 100%; height: auto; display: block }
 /* Text paragraphs */
 .container-block p {
     font-family: 'Arvo', sans-serif;
-    font-size: 21px;   
+    font-size: calc(17px + (21 - 17) * ((100vw - 320px) / (1600 - 320)));    
     color: #fff;
     line-height: 1.8;   
     margin-bottom: 20px;
 }
+
+/* Desktops */
+@media (min-width:768px) { .container-block p { line-height: 1.8 } }
+
+/* Mobiles */
+@media (max-width:767px) { .container-block p { line-height: 1.6 } }
 
 /* Last paragraph at bottom of container block */
 .container-block *:last-child { margin-bottom: 0 }
