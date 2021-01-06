@@ -65,3 +65,24 @@ img { width: 100%; height: auto; display: block }
 .bg-hero-block { background-color: #f5f9fb }
 .bg-pastel-1   { background-color: #BEC7B4 }
 .bg-pastel-2   { background-color: #DEE2D9 }
+
+/* ====== FANCY HYPERLINKS ====== */
+
+/* Passive link styles */
+
+a.fancy-link:link, a.fancy-link:visited {
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: #000;
+    border-bottom: solid 2px #000;
+ } 
+ 
+ /* Interactive link styles */
+ 
+ a.fancy-link:hover, a.fancy-link:focus, a.fancy-link:active {
+    text-decoration: none; 
+    padding-bottom: 3px;
+    color: blue;
+    border-bottom: solid 2px blue;
+    transition: all 0.2s linear; 
+ }
