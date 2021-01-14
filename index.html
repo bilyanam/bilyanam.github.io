@@ -3,39 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <title>Bootstrap Template</title>
+    <meta name="description" content="Bilyana Marinova | Web designer. ">   
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Customise Bootstrap for practical grid layouts -->
+  <link rel="stylesheet" href="assets/css/bootstrap-custom.css">   
+  <link rel="stylesheet" href="assets/css/global.css">
 
-  gtag('config', 'G-J7NKLGP3YG');
-</script>
+<style>
+    .container { border: solid 2px red }
+ </style>
+
+ 		<!-- Link to icons for Font Awesome 5 -->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
 
 </head>
 
 <body>
 
-    <h1>Welcome</h1>
-    <h2>Bilyana Marinova</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/website-logo.png" alt="website logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
-    <h3>Sample Web Pages</h3>
-    <p><a href="websites/page-1.html">A Tale of Two Cities</a></p> 
-    <p><a href="websites/page-2.html">IBAT Chocolates</a></p> 
-    <p><a href="websites/page-3.html">Prince and Purple Rain</a></p> 
-    <p><a href="websites/page-4.html">Lorem Ipsum</a></p> 
-    <p><a href="websites/page-5.html">Vincent van Gogh</a></p> 
-    <p><a href="websites/page-6.html">Irish Tourism</a></p> 
-    <p><a href="websites/page-7.html">Smoothies</a></p> 
-    <p><a href="websites/page-8.html">Software Analytics</a></p> 
-    <p><a href="page-9.html">Web Page with Panels</a></p>
-    <p><a href="page-10.html">Web Page with Pastel Sections</a></p>
-    <p><a href="page-11.html">Web Page with Dark Sections</a></p>
-    <p><a href="page-12.html">Web Page with Alternating Sections</a></p>
+    <div class="container-fluid hero-block hero-7">
+		<h1>Web Designer</h1>
+		<h2>Bilyana Marinova</h2>
 
-<!--this is comment -->
+		<!-- Buttons start here -->
+		<div class="row">
+			<div class="col-md-6 col-xs-12 text-right">
+				<a class="btn btn-success btn-lg" href="#" role="button"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;Portoflio</a>
+			</div>	
+			<div class="col-md-6 col-xs-12">
+				<a class="btn btn-success btn-lg" href="#" role="button"><i class="fas fa-bicycle"></i> &nbsp;&nbsp;Hire Me</a>
+			</div>	
+		</div>
+		<!-- Buttons end here -->
+
+	</div>
+
+    <div class="bg-green-light text-center">
+        <div class="container">
+            <h1>Recent Projects</h1>
+            <h3>Below you can see some examples of my recent work. Check out my complete portfolio.
+
+                Have a project you'd like to discuss? Let's make something great together!</h3>  
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
