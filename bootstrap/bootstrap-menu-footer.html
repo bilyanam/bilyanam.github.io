@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Menus and Footers</title>
+    <meta name="description" content="A sample Bootstrap web page with a menus and footer">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Customise Bootstrap for practical grid layouts -->
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
+    
+    <!-- CSS for Bootstrap menu and footer -->
+    <link rel="stylesheet" href="assets/css/bootstrap-menu-footer.css">
+    
+    <!-- Link to icons for Font Awesome 5 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
+
+</head>
+
+
+<body>
+    <!-- Begin navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="mainNav">
+        <div class="container">
+
+            <!-- Website logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/website-logo.png" width="200" height="40"  alt="Website logo">
+            </a>
+
+            <!-- Hamburger icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Begin menu options -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                   <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                   <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+  
+                    <!-- Call to action button-->
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#" role="button">
+                            <i class="fas fa-arrow-circle-right"></i> &nbsp;&nbsp;Join Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!-- End navbar -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+
+                <h1>Hello, world!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam! minus expedita numquam!
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur soluta iusto. Nisi atque illum eaque animi explicabo. Exercitationem harum fuga dicta illo rem incidunt magni corrupti qui, voluptatibus dolor?</p>
+
+                <h2>Sub-heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam!</p>
+                
+                <h2>Sub-heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur soluta iusto. Nisi atque illum eaque animi explicabo. Exercitationem harum fuga dicta illo rem incidunt magni corrupti qui, voluptatibus dolor?</p>
+
+                <h2>Sub-heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur soluta iusto. Nisi atque illum eaque animi explicabo. Exercitationem harum fuga dicta illo rem incidunt magni corrupti qui, voluptatibus dolor?</p>
+                
+                <h2>Sub-heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur soluta iusto. Nisi atque illum eaque animi explicabo. Exercitationem harum fuga dicta illo rem incidunt magni corrupti qui, voluptatibus dolor?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Begin footer-->
+    <footer class="container-fluid">
+
+        <h4>Mary Smith: web designer</h4>
+        <h5>Excellence in digital creation</h5>
+
+        <ul class="footer-links">
+            <li><a href="#l">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+        
+        <a class="privacy-legal" href="#">Privacy & Legal</a>
+    </footer>
+	<!-- End footer -->
+        
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
