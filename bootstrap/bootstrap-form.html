@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <meta name="description" content="A sample Bootstrap web page with a form">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-form_files/bootstrap.css">
+    
+    <!-- Customise Bootstrap for practical grid layouts -->
+    <link rel="stylesheet" href="bootstrap-form_files/bootstrap-custom.css">
+    
+    <!-- CSS for Bootstrap form -->
+    <link rel="stylesheet" href="bootstrap-form_files/bootstrap-form.css">
+
+    <!-- Link to icons for Font Awesome 5 -->
+	<link href="bootstrap-form_files/all.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
+
+<style>@media print {#ghostery-tracker-tally {display:none !important}}</style></head>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+
+                <h1>Hello, world!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta 
+eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita 
+numquam! minus expedita numquam!
+                </p>
+                
+                <!-- Begin form -->
+                <form action="https://formspree.io/f/mzbkoeel" class="needs-validation" novalidate="" id="myform">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" placeholder="Your name" id="name" required="">
+                        <div class="valid-feedback"><i class="fas fa-check-circle"></i> &nbsp;Thank you.</div>
+                        <div class="invalid-feedback"><i class="fas fa-exclamation-circle"></i> &nbsp;Please enter your name.</div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" placeholder="Enter email" id="email" required="">
+                        <div class="valid-feedback"><i class="fas fa-check-circle"></i> &nbsp;Thank you.</div>
+                        <div class="invalid-feedback"><i class="fas fa-exclamation-circle"></i> &nbsp;Please a valid email address.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your message:</label>
+                        <textarea class="form-control" rows="4" id="message" required=""></textarea>
+                        <div class="valid-feedback"><i class="fas fa-check-circle"></i> &nbsp;Thank you.</div>
+                        <div class="invalid-feedback"><i class="fas fa-exclamation-circle"></i> &nbsp;Please enter your message.</div>
+                    </div> 
+
+                    <button type="submit" class="btn btn-success">Send &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                  </form> 
+                  <!-- End form -->
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta 
+eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita 
+numquam! minus expedita numquam!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+
+    <!-- jQuery library -->
+    <script src="bootstrap-form_files/jquery.js"></script>
+    <!-- Popper JS -->
+    <script src="bootstrap-form_files/popper.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap-form_files/bootstrap.js"></script>
+
+
+
+    
+
+</body></html>

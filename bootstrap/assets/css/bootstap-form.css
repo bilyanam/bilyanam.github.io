@@ -1,0 +1,22 @@
+#myform { 
+    background-color: #f0f5f4;
+    padding: 20px 30px;
+    margin-bottom: 40px;    
+}
+
+#myform label { 
+    font-weight: bold;
+} 
+
+#myform button { 
+    font-size: large; 
+    padding: 6px 24px;
+} 
+
+#myform .valid-feedback, #myform .invalid-feedback { 
+    font-size: large;
+}
+
+
+
+
