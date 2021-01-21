@@ -1,0 +1,76 @@
+/* == Menus == */
+
+
+/* == Hero Blocks == */
+
+/* ==== HERO BLOCK GENERAL PROPERTIES ==== */
+/* Set height and vertically centers spacing above and below content */
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+}
+
+/* Desktop - hero block height and inside spacing */
+@media (min-width:768px) {
+    .hero-block { padding: 4% 5% }
+}
+
+/* Mobiles - hero block eight and inside spacing */
+ @media (max-width:767px) {
+    .hero-block { margin-bottom: 40px; padding: 20% 10% }
+    .col-md-6.col-xs-12.text-right,
+    .col-md-6.col-xs-12 { text-align: center !important }
+    .col-md-6.col-xs-12:nth-child(1) { margin-bottom: 12% }
+}
+
+/* Center-align headings and sub-headings */
+.hero-block h1, .hero-block h2 { text-align: center }
+
+/* Desktop - Space beneath headings and sub-headings */
+@media (min-width:768px) { 
+    .hero-block h1 { margin-bottom: 4% } 
+    .hero-block h2 { margin-bottom: 6% } 
+}
+
+/* Mobiles - Space beneath headings */
+@media (max-width:767px) { 
+    .hero-block h1 { margin-bottom: 8% } 
+    .hero-block h2 { margin-bottom: 10% } 
+}
+
+.hero-7 {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/home.jpg');       
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+.hero-7 h1 { 
+    /* Font styles */
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: calc(60px + (112 - 60) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 2px 2px #222;
+}
+
+.hero-7 h2 { 
+    /* Font styles */
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 2px 2px #222;
+}
+
+
+/* == Grid Content == */
+
+
+/* == Footer == */

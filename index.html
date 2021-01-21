@@ -3,85 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Template</title>
-    <meta name="description" content="Bilyana Marinova | Web designer. ">   
+    <title>Bilyana Marinova | Web Designer and Graphic Artist | Home Page</title>
+    <meta name="description" content="I create digital experiences to promote products, services and events.">
+    <!--
+    <meta name="description" content="I use HTML, CSS and JavaScript with graphic design and animation to bring your ideas to life.">
+    -->
+    
     <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Customise Bootstrap for practical grid layouts -->
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.css"> 
 
-  <!-- Customise Bootstrap for practical grid layouts -->
-  <link rel="stylesheet" href="assets/css/bootstrap-custom.css">   
-  <link rel="stylesheet" href="assets/css/global.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/css/global.css">
 
-<style>
-    .container { border: solid 2px red }
- </style>
+    <!-- Link to icons for Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
- 		<!-- Link to icons for Font Awesome 5 -->
-         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
-
+  gtag('config', 'G-J7NKLGP3YG');
+</script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/website-logo.png" alt="website logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+    <!-- Begin navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
+        <div class="container">
+
+            <!-- Website logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/website-logo.png" width="200" height="40"  alt="Website logo">
+            </a>
+
+            <!-- Hamburger icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Begin menu options -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                   <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
+                   <li class="nav-item"><a class="nav-link" href="javascript/">JavaScript</a></li>
+                  <li class="nav-item"><a class="nav-link" href="wordpress/">WordPress</a></li>
+  
+                    <!-- Call to action button-->
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="contact/" role="button">
+                            <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+   <!-- End navbar -->
 
-    <div class="container-fluid hero-block hero-7">
-		<h1>Web Designer</h1>
-		<h2>Bilyana Marinova</h2>
+    <div class="container-fluid hero-block hero-10">
+    
+        <!-- Background video --->
+        <video loop muted autoplay poster="assets/videos/hero-video-poster.jpg" class="background-video">
+                <source src="assets/videos/home-video.mp4" type="video/mp4">
+        </video>
+    
+        <!-- Optional overlay --->
+        <div class="bg-overlay"></div>
 
-		<!-- Buttons start here -->
-		<div class="row">
-			<div class="col-md-6 col-xs-12 text-right">
-				<a class="btn btn-success btn-lg" href="#" role="button"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;Portoflio</a>
-			</div>	
-			<div class="col-md-6 col-xs-12">
-				<a class="btn btn-success btn-lg" href="#" role="button"><i class="fas fa-bicycle"></i> &nbsp;&nbsp;Hire Me</a>
-			</div>	
-		</div>
-		<!-- Buttons end here -->
-
+        <!-- Hero block content --->
+        <div class="background-video-content">
+            <h1>Bilyana Marinova</h1>
+            <h2>Digital Designer</h2>
+      
+            <!-- Buttons start here -->
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <a class="btn btn-primary btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+                </div>	
+                <div class="col-md-6 col-xs-12">
+                    <a class="btn btn-primary btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
+                </div>	
+            </div>
+            <!-- Buttons end here -->            
+        </div>
 	</div>
 
-    <div class="bg-green-light text-center">
-        <div class="container">
-            <h1>Recent Projects</h1>
-            <h3>Below you can see some examples of my recent work. Check out my complete portfolio.
+    <div class="container introduction-text">
 
-                Have a project you'd like to discuss? Let's make something great together!</h3>  
-        </div>
+        <h1>Recent projects</h1>
+
+        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/">portfolio</a> and my <a href="assets/pdfs/cv-sample.pdf">CV</a>.</p>
+        
+        <p>Have a project you'd like to discuss? <a href="contact/">Let's make something great together</a>.</p>
     </div>
 
+    <!-- Begin footer-->
+    <footer class="container-fluid">
+
+        <h4>Bilyana Marinova: web designer</h4>
+        <h5>Excellence in digital creation</h5>
+
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/">Portfolio</a></li>
+            <li><a href="contact/">Contact Form</a></li>
+        </ul>
+        
+
+        <ul class="footer-icons">
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+        
+        <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
+    </footer>
+	<!-- End footer -->
+        
     <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
