@@ -30,6 +30,10 @@
 
   gtag('config', 'G-J7NKLGP3YG');
 </script>
+
+    <!-- Insites CSS for popup privacy message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body>
@@ -108,7 +112,7 @@
     <!-- Begin footer-->
     <footer class="container-fluid">
 
-        <h4>Bilyana Marinova: web designer</h4>
+        <h4>Bilyana Marinova: Web Designer</h4>
         <h5>Excellence in digital creation</h5>
 
         <ul class="footer-links">
@@ -162,5 +166,23 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-</body>
+    <!-- JavaScript for Cookie Consent Popup Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "content": {
+        "dismiss": "Got it!",
+        "href": "bilyanam.github.io/privacy.html"
+      }
+    });
+    </script>
+    </body>
 </html>
