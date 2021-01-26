@@ -39,3 +39,9 @@
 /* Some image effects*/
 .drop-shadow {  box-shadow: 8px 10px 8px #888;  }
 .soft-corner { border-radius: 15px }
+
+/* Increase default sizes of fonts in elements by 20% */
+body { font-size: 1.2rem }
+
+/* Except default font sizes four-colomn layouts */
+body .container .row .col-md-3 { font-size: 1.2rem }
