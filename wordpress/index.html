@@ -27,6 +27,10 @@
         
     </style>
 
+    <!-- Link to Insites cookie privacy message  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
@@ -120,26 +124,14 @@
 
         <ul class="footer-icons">
             <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/bilyana-marinova-6ab45b183/">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
 
             <li>
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
+                <a href="https://github.com/bilyanam">
                     <i class="fab fa-github"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fab fa-twitter"></i>
                 </a>
             </li>
 
@@ -162,5 +154,22 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "content": {
+        "href": "http://bilyanam.github.io/privacy.html"
+      }
+    });
+    </script>
+  
 </body>
 </html>
