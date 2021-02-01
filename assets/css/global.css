@@ -13,24 +13,31 @@
 /* =========== 1: WEBSITE TYPOGRAPHY ============= */
 
 /* Main headings */
-h1 { font-family: sans-serif }
+h1 { font-family: monospace; }
+.container1 {
+    color: #000;
+    font-family: serif;
+    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
+    text-align: center;
+    margin-top: 10px;
+}
 
 /* Sub-headings */
-h2 { font-family: sans-serif }
+h2 { font-family: Gabriola }
 
 /* Smaller sub-headings */
-h3, h4, h5, h6 { font-family: sans-serif }
+h3, h4, h5, h6 { font-family: Microsoft JhengHei }
 
 /* Text */
-p, li { font-family: sans-serif }
+p, li { font-family: Lucida Handwriting }
 
 /* Menus */
 #mainNav .container ul.navbar-nav li a.nav-link,
-#mainNav li.nav-item a.btn { font-family: sans-serif }
+#mainNav li.nav-item a.btn { font-family: Segoe Print }
 
 /* Footer */
 footer ul.footer-links li a,
-footer a.privacy-legal { font-family: sans-serif }
+footer a.privacy-legal { font-family: Tahoma  }
 
 
 /* =========== 2: BOOTSTRAP MENUS ============= */
@@ -40,10 +47,10 @@ footer a.privacy-legal { font-family: sans-serif }
 #mainNav .container img { margin-bottom: 0 }
 
 /* Menu: dark colour */
-nav.navbar.navbar-dark.bg-dark { background-color: darkblue !important }
+nav.navbar.navbar-dark.bg-dark { background-color: #25262a !important }
 
 /* Menu: light colour */
-nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
+nav.navbar.navbar-light.bg-light { background-color: #f0f4ff !important }
 
 /* Hamburger icon */
 #mainNav.navbar-dark.bg-dark i.fas.fa-bars { font-size: xx-large }
@@ -55,7 +62,7 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 #mainNav.navbar-light.bg-light i.fas.fa-bars { color: #000 }
 
 /* Menu options: text size and weight */
-#mainNav li.nav-item a { font-size: large; font-weight: bold }
+#mainNav li.nav-item a { font-size: large; font-weight: normal; }
 
 /* Menu options: call-to-action button */
 #mainNav li.nav-item a.btn { padding: 6px 20px; font-weight: normal }
@@ -70,13 +77,13 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 .navbar-light .navbar-nav .nav-link:link,
 .navbar-light .navbar-nav .nav-link:visited { color: #000 }
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:active { color: gray }
+.navbar-light .navbar-nav .nav-link:active { color: #b393a1 }
 
 /* Menu option colours: dark */
 .navbar-dark .navbar-nav .nav-link:link,
-.navbar-dark .navbar-nav .nav-link:visited { color: #fff }
+.navbar-dark .navbar-nav .nav-link:visited { color: #f0f4ff }
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:active { color: lightgray }
+.navbar-dark .navbar-nav .nav-link:active { color: #ffc107 }
 
 /* ============== 3: HERO BLOCKS GENERAL ============== */
 
@@ -124,84 +131,128 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 /* ====== 4: HERO BLOCK WITH BACKGROUND IMAGE ======= */
 
 /* Centre background image, horizontally and vertically */
+.hero-6 {
+    background-position: center center;
+    background-size: cover;
+}
+
 .hero-7 {
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.hero-10 {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* Default font settings */
-.hero-7 h1 { 
+.hero-6 h1 { 
     color: #fff;
-    font-weight: bold;
-    line-height: 1.1;
-    font-size: calc(60px + (112 - 60) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;
+    font-family: monospace;    
+    font-weight: normal;
+    line-height: 0.9;
+    margin-top: 70px;
+    font-size: calc(28px + (60 - 28) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 2px 2px #000;
+}
+.hero-6 h2 { 
+    color: #111;
+    line-height: 0.7;
+    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 1px 1px #000;    
+}
+
+
+.hero-7 h1 { 
+    color: #111;
+    font-family: cursive;
+    font-weight: normal;
+    line-height: 0.9;
+    margin-top: 40px;
+    font-size: calc(28px + (60 - 28) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 2px 2px #000;
 }
 
 .hero-7 h2 { 
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.4;
+    color: #111;
+    line-height: 0.7;
     font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;    
+    text-shadow: 1px 1px #000;    
 }
 
-/* ======= 5: HERO BLOCKS WITH BACKGROUND VIDEO ======= */
-
-.hero-10 { text-align: center; position: relative; overflow: hidden }
-
-.hero-10 .background-video-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 2;
-    height: 100%;
-}
-
-.hero-10 .background-video { 
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-}
-
-/* Optional overlay */
-.hero-10 .bg-overlay {
-    position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1;
-    background-image: linear-gradient(rgba(29,38,113,0.7),rgba(195,55,100,0.3)); 
-}
-
-.hero-10 video[poster] { object-fit: cover; width: 100%; height: 100% }
-
-/* Desktop - height */
-@media (min-width:768px) { .hero-10 .background-video-content { height: 300px } }
-
-/* Mobiles - height  */
-@media (max-width:767px) { .hero-10 .background-video-content { height: 380px } }
-
-.hero-10 .background-video-content h1 { 
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.4;
-    font-size: calc(48px + (100 - 48) * ((100vw - 320px) / (1600 - 320)));
-    letter-spacing: 2px;
-}
-
-.hero-10 .background-video-content h2 { 
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.4;
+.wp {
+    color: #222;
+    font-family: Trebuchet MS;
+    line-height: 1.3;
+    margin-top: 30px;
     font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (1600 - 320)));
+    text-align: center;
+    font-size: 1.6668vw;
+    line-height: 1.3;
 }
+
+.col-md-4 h2 {
+    font-family: arial black;
+}
+.text-pop-up-top {
+	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.hero-5 h1 {
+    color: #111;
+    margin-top: 50px;
+    text-align: center;
+    font-family: arial bold;
+    font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (1600 - 320)));
+    margin-left: 96px;
+    margin-bottom: 50px;
+}
+
+.js1 {
+    color:  #111;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 1px 1px #222;
+    margin-left: 40px;
+}
+
+.hero-10 h1 { 
+    color: #f0f8f9;
+    text-shadow: 2px 2px #000;    
+    font-size: calc(40px + (78 - 40) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 0.9;
+  }
+                
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+        
+.hero-10 h2 {
+    color:  #f0f8f9;
+    font-size: calc(22px + (50 - 22) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 2px 2px #000;
+}
+
 
 /* Desktop - Space beneath main heading  */
 @media (min-width:768px) { 
-    .hero-10 .background-video-content h1 { margin-bottom: 1% }
+    .hero-10 .background-image-content h1 { margin-bottom: 1% }
 }
 
 /* Mobiles - Space beneath main heading */
 @media (max-width:767px) { 
-    .hero-10 .background-video-content h1 { margin-bottom: 8% }
+    .hero-10 .background-image-content h1 { margin-bottom: 8% }
 }
 
 /* Desktop - button positioning  */
@@ -210,9 +261,13 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
     .hero-10 .col-md-6.col-xs-12:nth-child(2) { text-align: left }
 }
 
+
 /* ========== Introduction text block  ============*/
 
-.introduction-text { text-align: center }
+.introduction-text { 
+    color: #fff;
+    text-align: center; 
+}
 
 /* Desktop */
 @media (min-width:768px) { 
@@ -238,6 +293,70 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 
 #myform .valid-feedback, #myform .invalid-feedback { font-size: large }
 
+/* =============== Animation ==================*/
+
+h1 {
+    transform: translateY(-50%);
+    position: center;
+    max-width: 80%;
+    text-align: center;
+    color: #ddd;
+    font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h1 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 1s;
+}
+
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
 
 /* =============== 8: FOOTER ================== */
 
@@ -245,7 +364,7 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 footer { 
     text-align: center; 
     color:#fff;
-    background-color:rgb(36,64,84);
+    background-color:#2d2e32;
 }
 
 /* Desktop footer - inside padding  */
@@ -264,18 +383,36 @@ footer p, footer p a {
 
 /* Footer headings */
 footer h4 {
+    font-style: oblique;
+    font-family: Calibri;
    font-weight: normal;
-   font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
+   font-size: calc(28px + (46 - 28) * ((100vw - 320px)/(1600 - 320)));
    margin: 0 auto 16px 0;
+   text-shadow: 2px 2px #111;
 }
 
-footer h5 {
+.contact {
+    font-family: 'Lucida Sans';
+}
+
+.contact1 {
     font-weight: normal;
-    font-style:  italic;
+    font-family:  Comic Sans MS;
     color: #fff;
     margin: 0 auto 36px auto;
-    font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
+    font-size: calc(22px + (32 - 22) * ((100vw - 320px)/(1600 - 320)));
+    text-shadow: 1px 1px #000;
+
 }
+footer h5 {
+    font-weight: normal;
+    font-family:  Comic Sans MS;
+    margin: 0 auto 36px auto;
+    font-size: calc(20px + (36 - 20) * ((100vw - 320px)/(1600 - 320)));
+    text-shadow: 2px 2px #111;
+}
+
+
 
 /* Footer text links and icon links */
 footer ul.footer-links { text-align: center }
@@ -291,14 +428,18 @@ footer ul.footer-icons li { display: inline-block; margin: 0 32px 0 0 }
 footer ul.footer-links li:last-child,
 footer ul.footer-icons li:last-child { margin-right: 0 }
 
+
+
 /* Footer text links */
 footer ul.footer-links li a {
     color: #fff;
+    font-family: Verdana;
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     padding-bottom:2px;    
     font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
+    text-shadow: 1px 1px #000;
 }
 
 footer ul.footer-links li a:link, 
@@ -362,5 +503,4 @@ a.privacy-legal:active,
 a.privacy-legal:hover {
     border-bottom-color: #fff
 }
-
 
