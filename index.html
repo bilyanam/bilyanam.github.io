@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilyana Marinova | Web Designer and Graphic Artist | Home Page</title>
-    <meta name="description" content="I create digital experiences to promote products, services and events.">
-    <!--
-    <meta name="description" content="I use HTML, CSS and JavaScript with graphic design and animation to bring your ideas to life.">
-    -->
-    
+    <title>Bilyana Marinova | Digital Designer and Graphic Artist | Home Page</title>
+    <meta name="description" content="I craft ideas into digital experiences.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <link rel="preload" href="assets/img/home-page-image.jpg" as="image"> 
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -16,23 +21,36 @@
     <link rel="stylesheet" href="assets/css/bootstrap-custom.css"> 
 
     <!-- Main stylesheet -->
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="../websites/assets/css/global.css">
+
+        <!-- Styles for this web page -->
+        <style>
+            .container.text-center p { font-size: x-large; margin-bottom: 20px }
+            .hero-10 { 
+                background: linear-gradient(to bottom right, #25262a 20%, #434343 70%);                                                
+            }
+            @media (min-width:768px) { 
+                .hero-block { padding: 5% 5% }
+            }    
+
+            
+        </style>
+    
 
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-J7NKLGP3YG');
-</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-J7NKLGP3YG');
+    </script>   
 
     <!-- Insites CSS for popup privacy message -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
@@ -59,11 +77,13 @@
                    <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="javascript/">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="wordpress/">WordPress</a></li>
+                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">My Blog</a></li>
+
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="contact/" role="button">
-                            <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
+                        <a class="btn btn-outline-warning" href="contact/" role="button">
+                            <i class="far fa-envelope"></i> &nbsp;Hire me!
                         </a>
                     </li>
                 </ul>
@@ -72,39 +92,62 @@
     </nav>
    <!-- End navbar -->
 
+
     <div class="container-fluid hero-block hero-10">
     
-        <!-- Background video --->
-        <video loop muted autoplay poster="assets/videos/hero-video-poster.jpg" class="background-video">
-                <source src="assets/videos/home-video.mp4" type="video/mp4">
-        </video>
-    
+        <!-- Background image --->
+
         <!-- Optional overlay --->
         <div class="bg-overlay"></div>
 
         <!-- Hero block content --->
-        <div class="background-video-content">
-            <h1>Bilyana Marinova</h1>
-            <h2>Digital Designer</h2>
-      
-            <!-- Buttons start here -->
+        <div class="background-image-content">
+            
+              <main id="home" class="main">
+                <section id="intro" class="intro">
+                  <main>
+                    <header>
+                      <!-- <span class="circle top-right"></span> -->
+                      <div class="main-title-wrapper">
+                        <div class="main-title-inner">
+                          <p><span>Front-End</span> Developer</p>
+                        </div>
+                      </div>
+                      <!-- <span class="circle bottom-left"></span> -->
+                    </header>
+              
+                    <section>
+                        <h1>
+                        <span>I</span>
+                        <span>'</span>
+                        <span>m</span>&nbsp;
+                        <span>B</span>
+                        <span>i</span>
+                        <span>l</span>
+                        <span>y</span>
+                        <span>a</span>
+                        <span>n</span>
+                        <span>a</span>
+                    </h1>
+                <h2> UI/UX Designer</h2>
+    
+            
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-primary btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+                    <a class="btn btn-warning btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;Portfolio</a>
                 </div>	
                 <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-primary btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
+                    <a class="btn btn-warning btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;Let's Chat</a>
                 </div>	
             </div>
-            <!-- Buttons end here -->            
-        </div>
-	</div>
+                  
+	
 
     <div class="container introduction-text">
 
-        <h1>Recent projects</h1>
+        <h3>Recent projects</h3>
 
-        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/">portfolio</a> and my <a href="assets/pdfs/cv-sample.pdf">CV</a>.</p>
+        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/" class="fancy-link">portfolio</a>.</p>
         
         <p>Have a project you'd like to discuss? <a href="contact/">Let's make something great together</a>.</p>
     </div>
@@ -113,7 +156,7 @@
     <footer class="container-fluid">
 
         <h4>Bilyana Marinova: Web Designer</h4>
-        <h5>Excellence in digital creation</h5>
+        <h5>Creative vision and digital experience</h5>
 
         <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
@@ -145,7 +188,8 @@
         
         <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
     </footer>
-	<!-- End footer -->
+    <!-- End footer -->
+            
         
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -154,24 +198,27 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <!-- JavaScript for Cookie Consent Popup Message -->
-        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-        <script>
-        window.cookieconsent.initialise({
-        "palette": {
-            "popup": {
-            "background": "#000"
+            <!-- JavaScript for Cookie Consent Popup Message -->
+            <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+            <script>
+            window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                "background": "#000"
+                },
+                "button": {
+                "background": "#f1d600"
+                }
             },
-            "button": {
-            "background": "#f1d600"
+            "content": {
+                "dismiss": "Got it!",
+                "href": "bilyanam.github.io/privacy.html"
             }
-        },
-        "content": {
-            "dismiss": "Got it!",
-            "href": "bilyanam.github.io/privacy.html"
-        }
-        });
-        </script>
+            });
+            </script>
 
-    </body>
+</body>
+
+
 </html>
+
