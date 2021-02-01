@@ -6,6 +6,12 @@
     <title>Bilyana Marinova | Web UI/UX Designer | Portfolio Page</title>
     <meta name="description" content="View a selection of my web design and development work. Let's create something great together!">
     
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img//favicon-32x32.png">   
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="../assets/img/site.webmanifest">
+
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -16,15 +22,14 @@
     <link rel="stylesheet" href="../assets/css/global.css">
 
     <!-- Styles for this web page -->
-    <style>
+    <style class="portfolio">;
         .container.text-center p { font-size: x-large; margin-bottom: 20px }
-        .hero-7 { 
-            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../assets/img/hero-portfolio.jpg')
-        }
+        .hero-7  { 
+            background: linear-gradient(to bottom left, #00050d 0%, #ffecec 100%);
+                      }
         @media (min-width:768px) { 
             .hero-block { padding: 5% 5% }
         }    
-        
     </style>
 
     <!-- Link to Insites cookie privacy message  -->
@@ -69,11 +74,13 @@
                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="../javascript/">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="../wordpress/">WordPress</a></li>
+                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">My Blog</a></li>
+
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="../contact/" role="button">
-                            <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
+                        <a class="btn btn-outline-warning" href="contact/" role="button">
+                            <i class="far fa-envelope"></i> &nbsp;Hire me!
                         </a>
                     </li>
                 </ul>
@@ -82,32 +89,41 @@
     </nav>
    <!-- End navbar -->
 
-
    <div class="container-fluid hero-block hero-7">
     <h1>Bilyana Marinova</h1>
-    <h2>Web Design Portfolio</h2>
-
-
-</div>
-
-    <div class="container text-center">
-
-        <h1>I have been busy</h1>
-
-        <p>Below you can see a selection of my web design and development work.</p>
-        
-        <p>Have a project you'd like to discuss? <a href="../contact">Let's make something great together!</a></p>
+    <h2>Portfolio</h2>
     </div>
 
+  
+  
+    <div class="container text-center">
+            <div class="row">
+               <div class="col-md-4">
+                  <h2>Development</h2>
+                  <p>Having hands on experience in creating innovative designs, I do offer design solutions which harness the new possibilities of internet presence.</p>
+               </div>
+        
+               <div class="col-md-4">
+                  <h2>UX/UI Design</h2>
+                  <p>I make sure that every project is pixel perfect. I will accompany you from vision to the final product, providing you the best possible user experience. </p>
+               </div>
+        
+               <div class="col-md-4">
+                  <h2>Planning</h2>
+                  <p>I seek to exceed your business goals through focused strategic thinking and attention to details. I help you craft all your ideas from zero into a digital project identifying all your needs.</p>
+               </div>
+            </div>
+         </div>
+                
     <!-- Begin footer-->
-    <footer class="container-fluid">
+    <footer class="container-fluid-portfolio">
 
-        <h4>Bilyana Marinova: web designer</h4>
-        <h5>Excellence in digital creation</h5>
+        <h4>Bilyana Marinova: Web Designer</h4>
+        <h5>Creative vision and digital experience</h5>
 
         <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="../portfolio/">Portfolio</a></li>
             <li><a href="../contact/">Contact Form</a></li>
         </ul>
         
