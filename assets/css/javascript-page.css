@@ -1,0 +1,64 @@
+.wrapper-yellow {
+   background-color:#FFFF99;padding-top:20px; padding-bottom:72px
+}
+
+.js-box {
+    border:solid 1px yellow;
+    padding:20px;
+    background-color: lightyellow;
+    margin:0;
+}
+
+.container.introduction-text { margin-bottom: 0 }
+.container.introduction-text p { margin-bottom: 0 }
+
+@media (min-width: 768px) {
+    .container.introduction-text { padding-top: 3%;  padding-bottom: 3% }
+}
+
+.no-padding-bottom { padding-bottom: 10px  !important }
+.no-padding-top { padding-top: 10px !important }
+
+
+.row.js-box {margin: 0}
+
+.js-box p:last-child { margin-bottom: 0 }
+
+.hidden { display: none }
+.visible { display: block }
+
+.col-md-3 p { margin-top: 6px }
+#fName { margin-top: 8px; padding: 4px 9px }
+#error-msg {
+    border: solid 1px red;
+    height: 36px;
+    margin: 12px 0 0 0;
+    background-color: rgb(255,206,206);
+    width: 280px;
+    padding: 8px 12px 8px 12px;    
+}
+
+#error-msg P { line-height: 1; font-size: 16px; color: red }
+#error-msg P i { color: red }
+
+#resultfName {
+    margin: 32px 0 0 0;
+    border: solid 1px green;
+    height: 40px;
+    background-color: #E7FFE7;
+    width: 280px;
+    padding: 3px 12px;
+}
+
+a.fancy-link {
+    border-bottom: solid 2px transparent;
+    padding-bottom:2px;
+}
+a.fancy-link:link,
+a.fancy-link:visited { color: blue; border-bottom-color: blue }
+a.fancy-link:hover,
+a.fancy-link:focus { color: black; border-bottom-color: black }
+
+#allowPersmission { margin-top: 12px; color: gray }
+
+.btn.btn-light {border-color: #000 }
