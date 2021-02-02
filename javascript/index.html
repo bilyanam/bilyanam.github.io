@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bilyana Marinova | Web UI/UX Designer | JavaScript</title>
     <meta name="description" content="Check out some examples of my work with JavaScript.">
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">    
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img//favicon-32x32.png">   
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img//favicon-16x16.png">    
     <link rel="manifest" href="../assets/img/site.webmanifest">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -20,10 +20,13 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="../assets/css/global.css">
 
+    <!-- JavaScript stylesheet -->
+    <link rel="stylesheet" href="../assets/css/javascript-page.css"> 
+
     <!-- Styles for this web page -->
     <style>
-        .hero-5 { 
-            background-image:  linear-gradient(rgba(245, 247, 250, 1), rgba(184, 198, 219, 1));
+        .hero-7 { 
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../assets/img/hero-wordpress.jpg')
         }
         @media (min-width:768px) { 
             .hero-block { padding: 3% 5% }
@@ -32,27 +35,28 @@
         
     </style>
 
-    <!-- Link to Insites cookie privacy message  -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Styles for Cookie Consent Popup Message  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
-    gtag('config', 'G-J7NKLGP3YG');
-
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-J7NKLGP3YG');
     </script>
-    
+
+        <!-- Insites CSS for popup privacy message -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body>
+
     <!-- Begin navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
         <div class="container">
@@ -74,12 +78,11 @@
                    <li class="nav-item"><a class="nav-link" href="../portfolio/">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="#">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="../wordpress/">WordPress</a></li>
-                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">My Blog</a></li>
-
+  
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-outline-warning" href="contact/" role="button">
-                            <i class="far fa-envelope"></i> &nbsp;Hire me!
+                        <a class="btn btn-primary" href="../contact/" role="button">
+                            <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
                         </a>
                     </li>
                 </ul>
@@ -88,27 +91,90 @@
     </nav>
    <!-- End navbar -->
 
-   <div class="hero-5">
-    <h1>JavaScript</h1>
-   </div>
+
+   <div class="container-fluid hero-block hero-7">
+    <h1>Bilyana Marinova</h1>
+    <h2>JavaScript Coding</h2>
 
     <!-- Buttons start here -->
     <div class="row">
         <div class="col-md-6 col-xs-12 text-right">
-           <a class="btn btn-warning btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+           <a class="btn btn-primary btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
        </div>	
        <div class="col-md-6 col-xs-12">
-           <a class="btn btn-warning btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Let's chat</a>
+           <a class="btn btn-primary btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
        </div>	
    </div>
    <!-- Buttons end here --> 
 
+</div>
 
     <div class="container introduction-text">
 
-        <h1 class="js1">Here are some of my projects...</h1>
-
+        <h1>Some sample JavaScript</h1>
+        <p>Today, almost every one of the world’s 1.7 billion websites uses a programming language creating in <a target="_blank" class="fancy-link" href="https://thenewstack.io/brendan-eich-on-creating-javascript-in-10-days-and-what-hed-do-differently-today/">ten days</a> back in 1995. Check out my fun JavaScript coding samples below.</p>    
+    
     </div>
+
+
+    <div class="wrapper-yellow">
+        <div class="container col-md-8 offset-md-2">
+           <h3>To get started, please introduce yourself</h3>
+           <div class="row js-box">
+     
+              <div class="col-md-3">
+                 <p>Your First Name:</p>
+              </div>
+     
+              <div class="col-md-5">
+                 <input type="text" id="fName">
+                 <div id="error-msg" class="hidden"><p><i class="fas fa-exclamation-triangle"></i>  At least two characters, please.</p></div>
+                 <div id="resultfName" class="hidden"></div>
+              </div>
+     
+              <div class="col-md-4">
+                <button onclick="checkInput()" class="btn btn-primary">Go  <i class="fas fa-arrow-circle-right"></i></button>     
+                <button onclick="resetUser()" class="btn btn-light">Reset  <i class="fas fa-minus-circle"></i></button>
+             </div>
+           </div>
+        </div>
+     
+        <div id="content-area" class="hidden">
+     
+           <div class="container col-md-8 offset-md-2">
+              <div class="row js-box" style="margin-top:0">
+                 <div class="col-md-9 offset-md-3" style="margin-bottom: 12px">
+                    <div id="userOutput"></div>
+                 </div>
+     
+                 <div class="col-md-9 offset-md-3">
+                    <div id="browserOutput"></div>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="container col-md-8 offset-md-2">
+               <h3>Show your location</h3>
+               <div class="row js-box" style="padding-bottom:40px">
+                  <div class="col-md-4">
+                     <p id="msgFoundYou"></p>
+                   </div>
+     
+                  <div class="col-md-8">
+                     <button id="btn-find-me" class="btn btn-primary">Where am I?  <i class="fas fa-question-circle"></i></button>
+                     <p id="allowPersmission">( Please allow location access when prompted.)</p>
+                     <p id = "positionStatus"></p>
+                     <p id = "lat"></p>
+                     <p id = "lng" style="margin-bottom:28px"></p>
+                     <p id="map-block"></p>
+                  </div>
+               </div>
+            </div>
+        </div>
+     </div>
+
+
+
 
     <!-- Begin footer-->
     <footer class="container-fluid">
@@ -158,19 +224,24 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-      "palette": {
+    "palette": {
         "popup": {
-          "background": "#000"
+        "background": "#000"
         },
         "button": {
-          "background": "#f1d600"
+        "background": "#f1d600"
         }
-      },
-      "content": {
-        "href": "http://bilyanam.github.io/privacy.html"
-      }
+    },
+    "content": {
+        "href": "https://bilyanam.github.io/privacy.html"
+    }
     });
     </script>
-  
+        
+        <!-- JavaScript for this page -->
+    <script src="../assets/js/scripts.js"></script>  
+
+    <script src="https://cdn.rawgit.com/bestiejs/platform.js/master/platform.js"></script>
+
 </body>
 </html>
