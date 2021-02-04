@@ -12,76 +12,53 @@
 
 /* =========== 1: WEBSITE TYPOGRAPHY ============= */
 
-.row{
-    margin-top: 20%;
+/* Default for menus, text, footer  */
+p, li { font-family: 'Poppins', sans-serif }
+
+/*  Main heading and sub-heading in hero block */
+.hero-block h1 { 
+    font-family: 'Gabriola', serif;
+    color: #fff;
+    font-size: calc(48px + (100 - 48) * ((100vw - 320px) / (1600 - 320)));
+    text-shadow: 2px 2px #000;
 }
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-  }
-.container1{
-    text-align: center;
-    position: absolute;
-    margin-top: auto;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  .container span{
-    text-transform: uppercase;
-  }
 
 .text1{
-    color: white;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    background: black;
-    position: relative;
-    animation: text 3s 1;
-  }
-  .text2{
-    font-size: 30px;
-    color: #6ab04c;
-  }
-  
-  @keyframes text {
-    0%{
-      color: black;
-      margin-bottom: -40px;
-    }
-    30%{
-      letter-spacing: 25px;
-      margin-bottom: -40px;
-    }
-    85%{
-      letter-spacing: 8px;
-      margin-bottom: -40px;
-    }
-  }
-/* Main headings */
-h1 { font-family: MV Boli ; }
+        text-align: center;
+        font-size: calc(22px + (32 - 22) * ((100vw - 320px) / (1600 - 320)));
+        margin-bottom: 30px;
 
-/* Sub-headings */
-h2 { font-family: Gabriola }
+}
 
-/* Smaller sub-headings */
-h3, h4, h5, h6 { font-family: Microsoft JhengHei }
+.text2 {
+    text-align: center;
+    font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (1600 - 320)));    
+}
 
-/* Text */
-p, li { font-family: Lucida Handwriting }
+.hero-block h2 { 
+    font-family: 'Roboto Slab', sans-serif;
+    color: #ffc107;
+    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
+}
 
-/* Menus */
-#mainNav .container ul.navbar-nav li a.nav-link,
-#mainNav li.nav-item a.btn { font-family: Segoe Print }
+.container.text-center h1,
+.container.text-center h2 { font-family: 'Roboto Slab', sans-serif }
+.container.text-center p { font-family: 'Poppins', sans-serif }
+footer h5 { font-family: 'Roboto Slab', sans-serif }
 
-/* Footer */
-footer ul.footer-links li a,
-footer a.privacy-legal { font-family: Tahoma  }
+.container-form  h1 {
+    font-family: 'Roboto Slab', sans-serif; 
+    color: #25262a;
+}
+
+.container-form p,
+#myform label { 
+    font-family: 'Poppins', sans-serif; 
+    color: #25262a;
+}
 
 
-/* =========== 2: BOOTSTRAP MENUS ============= */
+/* ===== 2: BOOTSTRAP MENUS ==== */
 
 /* Menu spacing */
 #mainNav .container { padding-top: 0; padding-bottom: 0 }
@@ -89,10 +66,23 @@ footer a.privacy-legal { font-family: Tahoma  }
 
 /* Menu: dark colour */
 nav.navbar.navbar-dark.bg-dark { background-color: #25262a !important }
-/* nav.navbar.navbar-dark.bg-dark { background-image: linear-gradient(90deg,#802b7b,#de0a85); }  */
 
-/* Menu: light colour */
-nav.navbar.navbar-light.bg-light { background-color: #f0f4ff !important }
+/** CTA Button */
+#mainNav li.nav-item a.btn.btn-outline-danger { 
+    padding: 6px 20px; font-weight: normal; 
+    border-width: 2px; border-style: solid; border-radius: 3px;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .btn.btn-outline-danger:link,
+.navbar-dark .navbar-nav .btn.btn-outline-danger:visited { 
+    color: #ffc107;  border-color:#ffc107
+}
+
+.navbar-dark .navbar-nav .btn.btn-outline-danger:hover,
+.navbar-dark .navbar-nav .btn.btn-outline-danger:active { 
+    color: #fff; border-width: 2px; border-color: #fff;
+}
 
 /* Hamburger icon */
 #mainNav.navbar-dark.bg-dark i.fas.fa-bars { font-size: xx-large }
@@ -100,14 +90,8 @@ nav.navbar.navbar-light.bg-light { background-color: #f0f4ff !important }
 /* Hamburger icon: dark colour */ 
 #mainNav.navbar-dark.bg-dark i.fas.fa-bars { color: #fff }
 
-/* Hamburger icon: dark colour */
-#mainNav.navbar-light.bg-light i.fas.fa-bars { color: #000 }
-
 /* Menu options: text size and weight */
 #mainNav li.nav-item a { font-size: large; font-weight: normal; }
-
-/* Menu options: call-to-action button */
-#mainNav li.nav-item a.btn { padding: 6px 20px; font-weight: normal }
 
 /* Menu options: tablets/desktops */
 @media (min-width: 1200px) { #mainNav li.nav-item { margin-left: 40px } }
@@ -115,87 +99,223 @@ nav.navbar.navbar-light.bg-light { background-color: #f0f4ff !important }
 /* Menu options: mobiles */
 @media (max-width: 1199px) { #mainNav li.nav-item { margin-bottom: 20px } }
 
-/* Menu option colours: light */
-.navbar-light .navbar-nav .nav-link:link,
-.navbar-light .navbar-nav .nav-link:visited { color: #000 }
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:active { color: #b393a1 }
-
 /* Menu option colours: dark */
 .navbar-dark .navbar-nav .nav-link:link,
-.navbar-dark .navbar-nav .nav-link:visited { color: #f0f4ff }
+.navbar-dark .navbar-nav .nav-link:visited { color: #fff }
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:active { color: #ffc107 }
 
-/* ============== 3: HERO BLOCKS GENERAL ============== */
 
-/* Verically center content and default background colour */
+/* ============== 3: HERO BLOCKS ============== */
+
 .hero-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: gray;
+    background-color: #25262a;
+    background-position: center center;
+    background-size: cover;
 }
 
-/* Desktop - hero block inside spacing */
+/* Center-align heading and sub-heading */
+.hero-block h1, .hero-block h2 { text-align: center }
+
+/* Desktop - spacing */
 @media (min-width:768px) {
-    .hero-block { padding: 8% 5% }
+    .hero-block { padding: 4% 5% 4% 5% }
+    .hero-block h1 { margin-bottom: 1% }
+    .hero-block h2 { margin-bottom: 5% } 
 }
 
-/* Mobiles - hero inside spacing */
+/* Mobiles - inside spacing */
  @media (max-width:767px) {
-    .hero-block { margin-bottom: 40px; padding: 20% 10% }
+    .hero-block { padding: 20% 10% }
+    .hero-block h1 { margin-bottom: 8% } 
+    .hero-block h2 { margin-bottom: 14% } 
+
     .col-md-6.col-xs-12.text-right,
     .col-md-6.col-xs-12 { text-align: center !important }
     .col-md-6.col-xs-12:nth-child(1) { margin-bottom: 12% }
 }
 
-/* Center-align headings and sub-headings */
-.hero-block h1, .hero-block h2 { text-align: center }
+/* ========== Introduction text block  ============*/
 
-/* Set maximum width of heading snd sub-heading */
-.hero-block h1, .hero-block h2 { 
-    max-width: 80%; margin-left: auto; margin-right: auto
+.container.text-center { text-align: center }
+
+/* Desktop */
+@media (min-width:768px) { .container.text-center { padding: 4% 10% 5% 10% } }
+
+/* Mobiles */
+@media  (max-width:767px) { .container.text-center { padding: 7% 7% 10% 7% } }
+
+.container.text-center h1,
+.container.text-center h2,
+.container.text-center p { color: #25262a }
+
+.container.text-center p { 
+    font-size: calc(20px + (26 - 20) * ((100vw - 320px)/(1600 - 320))) ;
 }
 
-/* Desktop - Space beneath headings and sub-headings */
-@media (min-width:768px) { 
-    .hero-block h1 { margin-bottom: 4% } 
-    .hero-block h2 { margin-bottom: 6% } 
+
+.col-md-6 h2, .col-md-6 h3, .col-md-6 h4,
+.col-md-4 h2, .col-md-4 h3, .col-md-4 h4,
+.col-md-3 h2, .col-md-3 h3, .col-md-3 h4 {
+    font-family: 'Roboto Slab', sans-serif;
+    color:#592a25;
+    
 }
 
-/* Mobiles - Space beneath headings */
-@media (max-width:767px) { 
-    .hero-block h1 { margin-bottom: 8% } 
-    .hero-block h2 { margin-bottom: 14% } 
+.col-md-6 p, 
+.col-md-4 p, 
+.col-md-3 p {
+    font-size: calc(17px + (18 - 17) * ((100vw - 320px)/(1600 - 320)));
 }
 
-/* ====== 4: HERO BLOCK WITH BACKGROUND IMAGE ======= */
 
-/* Centre background image, horizontally and vertically */
-.hero-7 {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
+/* ================= 7: CONTACT FORM ==================*/
+
+#myform { 
+    background-color: #f0f5f4;
+    padding: 20px 30px;
+    margin-bottom: 40px;    
 }
 
-/* Default font settings */
-.hero-7 h1 { 
+#myform label { font-weight: bold } 
+
+#myform button { font-size: large; padding: 6px 24px } 
+
+#myform .valid-feedback, #myform .invalid-feedback { font-size: large }
+
+/* =============== 8: FOOTER ================== */
+
+/* Outer footer parent container */
+footer { 
+    text-align: center;     
+    background-color: #4a2642;
+}
+
+/* Desktop footer - inside padding  */
+@media (min-width:768px) { footer { padding: 4% 8% 3% 8% } }
+
+/* Mobiles footer - inside padding */
+@media (max-width:767px) { footer { padding: 9% 8% 10% 8% } }
+
+/* Main heading */
+footer h4 { 
     color: #fff;
-    font-weight: bold;
-    line-height: 1.1;
-    font-size: calc(60px + (112 - 60) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;
+    font-weight: normal;
+    font-size: calc(28px + (52 - 28) * ((100vw - 320px)/(1600 - 320)));
+    margin: 0 auto 24px 0;
 }
 
-.hero-7 h2 { 
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.4;
-    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;    
+/* Sub-heading */
+footer h5 { 
+    color: #ffc107;
+    font-weight: normal;
+    margin: 0 auto 36px auto;
+    font-size: calc(20px + (36 - 20) * ((100vw - 320px)/(1600 - 320)));
+} 
+
+/* Text Links */
+footer ul.footer-links  { 
+    list-style-type: none;
+    text-align: center; 
+    margin: 0 auto 48px auto; 
+    padding-left: 0    
 }
+
+footer ul.footer-links li { display: inline-block; margin: 0 32px 0 0 }
+
+footer ul.footer-links li:last-child { margin-right: 0 }
+
+footer ul.footer-links li a {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
+}
+
+footer ul.footer-links li a:link, 
+footer ul.footer-links li a:visited  { 
+    border-bottom-color: transparent;
+}
+
+footer ul.footer-links li a:hover, 
+footer ul.footer-links li a:active  { 
+    border-bottom-color: #fff;
+}
+
+
+/* Icon Links */
+footer ul.footer-icons { 
+    list-style-type: none;
+    margin: 0 auto 48px auto; 
+    padding-left: 0 
+}
+
+/* Footer icons */
+footer ul.footer-icons li a i {
+    text-decoration: none;
+    font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
+}
+
+footer ul.footer-icons li { display: inline-block; margin: 0 32px 0 0 }
+footer ul.footer-icons li:last-child { margin-right: 0 }
+
+footer ul.footer-icons li a:link,
+footer ul.footer-icons li a:visited { color: #ffc107 }
+footer ul.footer-icons li a:hover, 
+footer ul.footer-icons li a:active  { color: #fff }
+
+
+
+
+
+/* Privacy and legal link */
+footer p a {
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom:2px;  
+    color: #fff;  
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+}
+
+footer p a:link, 
+footer p a:visited  {
+    color:#fff;
+    border-bottom-color: transparent;
+}
+
+footer p a:hover, 
+footer p a:active  {
+    color:#fff;
+    border-bottom-color: #fff;
+}
+
+a.privacy-legal {
+    font-family: 'Poppins', sans-serif ;    
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom:2px;    
+    font-size: calc(14px + (17 - 14) * ((100vw - 320px)/(1600 - 320)));
+}
+
+a.privacy-legal:link,
+a.privacy-legal:visited {
+    border-bottom-color: transparent;
+}
+
+a.privacy-legal:active,
+a.privacy-legal:hover {
+    border-bottom-color: #fff
+}
+
 
 
 /* ======= 5: HERO BLOCKS WITH BACKGROUND VIDEO ======= */
@@ -224,194 +344,10 @@ nav.navbar.navbar-light.bg-light { background-color: #f0f4ff !important }
 
 .hero-10 video[poster] { object-fit: cover; width: 100%; height: 100% }
 
-/* Desktop - height */
-@media (min-width:768px) { .hero-10 .background-video-content { height: 300px } }
 
-/* Mobiles - height  */
-@media (max-width:767px) { .hero-10 .background-video-content { height: 380px } }
-
-.hero-10 .background-video-content h1 { 
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.4;
-    font-size: calc(48px + (100 - 48) * ((100vw - 320px) / (1600 - 320)));
-    letter-spacing: 2px;
-}
-
-.hero-10 .background-video-content h2 { 
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.4;
-    font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (1600 - 320)));
-}
-
-/* Desktop - Space beneath main heading  */
-@media (min-width:768px) { 
-    .hero-10 .background-video-content h1 { margin-bottom: 1% }
-}
-
-/* Mobiles - Space beneath main heading */
-@media (max-width:767px) { 
-    .hero-10 .background-video-content h1 { margin-bottom: 8% }
-}
 
 /* Desktop - button positioning  */
 @media (min-width:768px) { 
     .hero-10 .col-md-6.col-xs-12:nth-child(1) { text-align: right }
     .hero-10 .col-md-6.col-xs-12:nth-child(2) { text-align: left }
 }
-
-/* ========== Introduction text block  ============*/
-
-.introduction-text { text-align: center }
-
-/* Desktop */
-@media (min-width:768px) { 
-    .introduction-text { padding: 4% 10% 5% 10% }
-}
-
-/* Mobiles */
-@media  (max-width:767px) { .introduction-text { padding: 7% 7% 10% 7% } }
-
-.introduction-text p { font-size: calc(20px + (26 - 20) * ((100vw - 320px)/(1600 - 320))) }
-
-/* ================= 7: CONTACT FORM ==================*/
-
-#myform { 
-    background-color: #f0f5f4;
-    padding: 20px 30px;
-    margin-bottom: 40px;    
-}
-
-#myform label { font-weight: bold } 
-
-#myform button { font-size: large; padding: 6px 24px } 
-
-#myform .valid-feedback, #myform .invalid-feedback { font-size: large }
-
-
-/* =============== 8: FOOTER ================== */
-
-/* Outer footer parent container */
-footer { 
-    text-align: center; 
-    color:#fff;
-    background-color:#2d2e32;
-}
-
-/* Desktop footer - inside padding  */
-@media (min-width:768px) { footer { padding: 4% 8% 4% 8% } }
-
-/* Mobiles footer - inside padding */
-@media (max-width:767px) { footer { padding: 8% 8% 12% 8% } }
-
-/* Styles for footer background, text, icons and links */
-
-footer h4, footer h5, 
-footer ul.footer-icons li, footer ul.footer-icons li a, 
-footer p, footer p a {
-   color: #fff
-}
-
-/* Footer headings */
-footer h4 {
-   font-weight: normal;
-   font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
-   margin: 0 auto 16px 0;
-}
-
-footer h5 {
-    font-weight: normal;
-    font-style:  italic;
-    color: #fff;
-    margin: 0 auto 36px auto;
-    font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
-}
-
-/* Footer text links and icon links */
-footer ul.footer-links { text-align: center }
-footer ul.footer-links { margin-left: 0 }
-footer ul.footer-links, footer ul.footer-icons { list-style-type: none }
-
-footer ul.footer-links,
-footer ul.footer-icons { margin: 0 auto 48px auto; padding-left: 0 }
-
-footer ul.footer-links li,
-footer ul.footer-icons li { display: inline-block; margin: 0 32px 0 0 }
-
-footer ul.footer-links li:last-child,
-footer ul.footer-icons li:last-child { margin-right: 0 }
-
-/* Footer text links */
-footer ul.footer-links li a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    padding-bottom:2px;    
-    font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
-}
-
-footer ul.footer-links li a:link, 
-footer ul.footer-links li a:visited  {
-   border-bottom-color: transparent;
-}
-
-footer ul.footer-links li a:hover, 
-footer ul.footer-links li a:active  {
-   border-bottom-color: #fff;
-}
-
-/* Footer icons */
-footer ul.footer-icons li a i {
-    text-decoration: none;
-    font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
-}
-
-footer ul.footer-icons li a:hover, 
-footer ul.footer-icons li a:active  { color: #fff1e5 }
-
-/* Privacy and legal link */
-footer p a {
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    padding-bottom:2px;  
-    color: #fff;  
-    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-}
-
-footer p a:link, 
-footer p a:visited  {
-    color:#fff;
-    border-bottom-color: transparent;
-}
-
-footer p a:hover, 
-footer p a:active  {
-    color:#fff;
-    border-bottom-color: #fff;
-}
-
-a.privacy-legal {
-    font-family: sans-serif;    
-    display: inline-block;
-    color:#fff;
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    padding-bottom:2px;    
-    font-size: calc(14px + (17 - 14) * ((100vw - 320px)/(1600 - 320)));
-}
-
-a.privacy-legal:link,
-a.privacy-legal:visited {
-    border-bottom-color: transparent;
-}
-
-a.privacy-legal:active,
-a.privacy-legal:hover {
-    border-bottom-color: #fff
-}
-
-
