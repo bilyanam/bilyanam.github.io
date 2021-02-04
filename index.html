@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilyana Marinova | Digital Designer and Graphic Artist | Home Page</title>
-    <meta name="description" content="I craft ideas into digital experiences.">
+    <title>Bilyana Marinova | Web UI/UX Designer | Home Page</title>
+    <meta name="description" content="View a selection of my web design and development work. Let's create something great together!">
     
-    <link rel="preload" href="assets/videos/hero-video-poster.jpg" as="image"> 
-
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">   
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
     <link rel="manifest" href="assets/img/site.webmanifest">
 
-    <link rel="preload" href="assets/videos/hero-home.jpg" as="image"> 
-
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -25,31 +21,56 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/global.css">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   
+    <style>
+        .container.text-center { padding-bottom: 20px }
+        .container.text-center h2 { 
+            margin-bottom: 0; 
+            padding-bottom: 0;
+            font-size: calc(24px + (30 - 24) * ((100vw - 320px)/(1600 - 320)));
+        
+        }
+        .container.text-center h2 span {
+            color: #ffc107;
+            background-color: #25262a;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .hero-10 { margin-bottom: 30px }
+        }
+    </style>
+
+    <!-- Google Font for man heading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet"> 
+
+    <!-- Google Font for sub-headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"     rel="stylesheet"> 
+
+    <!-- Google Font for text -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+
+    <!-- Link to Insites cookie privacy message  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
-	<!-- Styles for Cookie Consent Popup Message  -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
     <script>
-        var bgvideo = document.getElementById("bg-video");
-        bgvideo.muted = true;
-        bgvideo.play();
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J7NKLGP3YG');
     </script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-J7NKLGP3YG');
-    </script>   
-
-    <!-- Insites CSS for popup privacy message -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
+    
 </head>
 
 <body>
@@ -75,12 +96,11 @@
                    <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="javascript/">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="wordpress/">WordPress</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">My Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">Blog</a></li>
 
-  
-                    <!-- Call to action button-->
+                      <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-outline-warning" href="contact/" role="button">
+                        <a class="btn btn-outline-danger" href="contact/" role="button">
                             <i class="far fa-envelope"></i> &nbsp;Hire me!
                         </a>
                     </li>
@@ -90,55 +110,69 @@
     </nav>
    <!-- End navbar -->
 
-    <div class="container-fluid hero-block hero-10">
+   <div class="container-fluid hero-block hero-10">
     
         <!-- Background video --->
-        <video loop playinline muted autoplay poster="assets/videos/hero-home.jpg" class="background-video" disablepictureinpicture preload="auto">  
-            <source src="assets/videos/home-video.mp4" type="video/mp4">           
+        <video loop muted autoplay playsinline poster="assets/videos/hero-home.jpg" class="background-video" disablepictureinpicture preload="auto">
+            <source src="assets/videos/home-video.mp4" type="video/mp4">
         </video>
-    
+
         <!-- Optional overlay --->
         <div class="bg-overlay"></div>
 
         <!-- Hero block content --->
         <div class="background-video-content">
-            <div class="container1">
-                <span class="text1">Hi.</span>
-                <span class="text2">I'm Bilyana.</span>
-                <p> I’m a web designer who loves to build human-friendly interfaces and digital experiences.</p>
-            </div>
-      
+            
+            <h1>Bilyana Marinova</h1>
+            <h2>Web / UI Designer</h2>
+    
             
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-warning btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;Portfolio</a>
+                    <a class="btn btn-danger btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
                 </div>	
                 <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-warning btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;Let's Chat</a>
+                    <a class="btn btn-danger btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
                 </div>	
             </div>
+                
         </div>
-	</div>
-
-    <div class="container introduction-text">
-
-        <h1>Recent projects</h1>
-
-        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/" class="fancy-link">portfolio</a> and my <a href="assets/pdfs/cv-sample.pdf">CV</a>.</p>
-        
-        <p>Have a project you'd like to discuss? <a href="contact/">Let's make something great together</a>.</p>
     </div>
 
+    <div class="container text-center">
+        <h2>Hi. I'm <span>Bilyana</span>. I’m a web designer who loves to build human-friendly interfaces and digital experiences.</h2>
+    </div>
+                
+  
+    <div class="container">
+            <div class="row">
+               <div class="col-md-4 text-center">
+                  <h2>Development</h2>
+                  <p>Having hands on experience in creating innovative designs, I do offer design solutions which harness the new possibilities of internet presence.</p>
+               </div>
+        
+               <div class="col-md-4 text-center">
+                  <h2>UX/UI Design</h2>
+                  <p>I make sure that every project is pixel perfect. I will accompany you from vision to the final product, providing you the best possible user experience. </p>
+               </div>
+        
+               <div class="col-md-4 text-center">
+                  <h2>Planning</h2>
+                  <p>I seek to exceed your business goals through focused strategic thinking and attention to details. I help you craft all your ideas from zero into a digital project identifying all your needs.</p>
+               </div>
+            </div>
+         </div>
+                
     <!-- Begin footer-->
-    <footer class="container-fluid">
+    <footer class="container-fluid-portfolio">
 
         <h4>Bilyana Marinova: Web Designer</h4>
-        <h5>Creative vision and digital experience</h5> 
+        <h5>Creative vision and digital experience</h5>
 
         <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="portfolio/">Portfolio</a></li>
-            <li><a href="contact/">Contact Form</a></li>
+            <li><a href="contact/">Contact</a></li>
         </ul>
         
 
@@ -161,7 +195,6 @@
                 </a>
             </li>
             
-            
          </ul>                
         
         <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
@@ -178,20 +211,19 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-    "palette": {
+      "palette": {
         "popup": {
-        "background": "#000"
+          "background": "#000"
         },
         "button": {
-        "background": "#f1d600"
+          "background": "#f1d600"
         }
-    },
-    "content": {
-        "href": "https://bilyanam.github.io/privacy.html"
-    }
+      },
+      "content": {
+        "href": "http://bilyanam.github.io/privacy.html"
+      }
     });
     </script>
-        
+  
 </body>
 </html>
-
