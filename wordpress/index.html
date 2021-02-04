@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bilyana Marinova | Web UI/UX Designer | WordPress</title>
     <meta name="description" content="Check out some examples of my work with WordPress">
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">    
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img//favicon-32x32.png">   
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img//favicon-16x16.png">    
     <link rel="manifest" href="../assets/img/site.webmanifest">
 
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -23,8 +22,8 @@
 
     <!-- Styles for this web page -->
     <style>
-        .hero-6 { 
-            background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('../assets/img/home-page-image.jpg')
+        .hero-7 { 
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../assets/img/hero-wordpress.png')
         }
         @media (min-width:768px) { 
             .hero-block { padding: 3% 5% }
@@ -33,23 +32,24 @@
         
     </style>
 
-    <!-- Link to Insites cookie privacy message  -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Styles for Cookie Consent Popup Message  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
-    gtag('config', 'G-J7NKLGP3YG');
-</script>
-    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-J7NKLGP3YG');
+    </script>
+
+    <!-- Insites CSS for popup privacy message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body>
@@ -75,13 +75,13 @@
                    <li class="nav-item"><a class="nav-link" href="../portfolio/">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="../javascript/">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">WordPress</a></li>
-                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">My Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">Blog</a></li>
 
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-outline-danger" href="contact/" role="button">
-                            <i class="far fa-envelope"></i> &nbsp;Hire me!
+                        <a class="btn btn-outline-danger" href="../contact/" role="button">
+                            <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
                         </a>
                     </li>
                 </ul>
@@ -91,7 +91,7 @@
    <!-- End navbar -->
 
 
-   <div class="container-fluid hero-block hero-6">
+   <div class="container-fluid hero-block hero-7">
     <h1>Bilyana Marinova</h1>
     <h2>WordPress Design</h2>
 
@@ -101,7 +101,7 @@
             <a class="btn btn-danger btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
         </div>	
         <div class="col-md-6 col-xs-12">
-            <a class="btn btn-danger btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Let's chat</a>
+            <a class="btn btn-danger btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
         </div>	
     </div>
     <!-- Buttons end here --> 
@@ -110,8 +110,12 @@
 
     <div class="container introduction-text">
 
-        <h1 class="wp">Here is a non-exhaustive list of my work.
-        Don’t hesitate to contact me for more information</h1>
+        <h1 class="text1">Worry-Free WordPress</h1>
+
+        <p class="text2">Don't sweat the technical stuff - you can leave this to me!</p>
+
+        <p class="text2">Manage your website using the web's most popular content management system. Stand out from the crowd with a beautiful, fully responsive, custom designed WordPress website.</p>
+        
     </div>
 
     <!-- Begin footer-->
@@ -123,7 +127,7 @@
         <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../portfolio/">Portfolio</a></li>
-            <li><a href="../contact/">Contact Form</a></li>
+            <li><a href="../contact/">Contact</a></li>
         </ul>
         
 
@@ -159,22 +163,23 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-      "palette": {
+    "palette": {
         "popup": {
-          "background": "#000"
+        "background": "#000"
         },
         "button": {
-          "background": "#f1d600"
+        "background": "#f1d600"
         }
-      },
-      "content": {
-        "href": "http://bilyanam.github.io/privacy.html"
-      }
+    },
+    "content": {
+        "href": "https://bilyanam.github.io/privacy.html"
+    }
     });
     </script>
-  
+
 </body>
 </html>

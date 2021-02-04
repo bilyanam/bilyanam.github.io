@@ -26,7 +26,7 @@
     <!-- Styles for this web page -->
     <style>
         .hero-7 { 
-            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../assets/img/hero-wordpress.jpg')
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../assets/img/hero-js.jpg')
         }
         @media (min-width:768px) { 
             .hero-block { padding: 3% 5% }
@@ -78,10 +78,12 @@
                    <li class="nav-item"><a class="nav-link" href="../portfolio/">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="#">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="../wordpress/">WordPress</a></li>
+                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">Blog</a></li>
+
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="../contact/" role="button">
+                        <a class="btn btn-outline-warning" href="../contact/" role="button">
                             <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
                         </a>
                     </li>
@@ -99,10 +101,10 @@
     <!-- Buttons start here -->
     <div class="row">
         <div class="col-md-6 col-xs-12 text-right">
-           <a class="btn btn-primary btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+           <a class="btn btn-danger btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
        </div>	
        <div class="col-md-6 col-xs-12">
-           <a class="btn btn-primary btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
+           <a class="btn btn-danger btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
        </div>	
    </div>
    <!-- Buttons end here --> 
@@ -117,7 +119,7 @@
     </div>
 
 
-    <div class="wrapper-yellow">
+    <div class="wrapper-#534148">
         <div class="container col-md-8 offset-md-2">
            <h3>To get started, please introduce yourself</h3>
            <div class="row js-box">
@@ -133,7 +135,7 @@
               </div>
      
               <div class="col-md-4">
-                <button onclick="checkInput()" class="btn btn-primary">Go  <i class="fas fa-arrow-circle-right"></i></button>     
+                <button onclick="checkInput()" class="btn btn-warning">Go  <i class="fas fa-arrow-circle-right"></i></button>     
                 <button onclick="resetUser()" class="btn btn-light">Reset  <i class="fas fa-minus-circle"></i></button>
              </div>
            </div>
@@ -161,7 +163,7 @@
                    </div>
      
                   <div class="col-md-8">
-                     <button id="btn-find-me" class="btn btn-primary">Where am I?  <i class="fas fa-question-circle"></i></button>
+                     <button id="btn-find-me" class="btn btn-warning">Where am I?  <i class="fas fa-question-circle"></i></button>
                      <p id="allowPersmission">( Please allow location access when prompted.)</p>
                      <p id = "positionStatus"></p>
                      <p id = "lat"></p>
