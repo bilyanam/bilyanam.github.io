@@ -21,15 +21,24 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="../assets/css/global.css">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   
+    <!-- Google Font for man heading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet"> 
+
+    <!-- Google Font for sub-headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"     rel="stylesheet"> 
+
+    <!-- Google Font for text -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+
     <!-- Styles for this web page -->
-    <style class="portfolio">;
-        .container.text-center p { font-size: x-large; margin-bottom: 20px }
-        .hero-7  { 
-            background: linear-gradient(to bottom left, #00050d 0%, #ffecec 100%);
-                      }
-        @media (min-width:768px) { 
-            .hero-block { padding: 5% 5% }
-        }    
+    <style>
+        .hero-block { 
+            background-image: url('../assets/img/portfolio.jpg')
+        }
     </style>
 
     <!-- Link to Insites cookie privacy message  -->
@@ -74,12 +83,11 @@
                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="../javascript/">JavaScript</a></li>
                   <li class="nav-item"><a class="nav-link" href="../wordpress/">WordPress</a></li>
-                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">My Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">Blog</a></li>
 
-  
-                    <!-- Call to action button-->
+                      <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-outline-warning" href="contact/" role="button">
+                        <a class="btn btn-outline-danger" href="../contact/" role="button">
                             <i class="far fa-envelope"></i> &nbsp;Hire me!
                         </a>
                     </li>
@@ -89,54 +97,46 @@
     </nav>
    <!-- End navbar -->
 
-   <div class="container-fluid hero-block hero-7">
-    <h1>Bilyana Marinova</h1>
-    <h2>Portfolio</h2>
+   
+   <div class="container-fluid hero-block">
+        <h1>Portfolio</h1>
+        <h2>Bilyana Marinova</h2>
+
+        <!-- Buttons start here -->
+        <div class="row">
+            <div class="col-md-6 col-xs-12 text-right">
+                <a class="btn btn-danger btn-lg" href="#" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+            </div>	
+            <div class="col-md-6 col-xs-12">
+                <a class="btn btn-danger btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Let's chat</a>
+            </div>	
+        </div>
+        <!-- Buttons end here --> 
     </div>
 
-  
-  
     <div class="container text-center">
-            <div class="row">
-               <div class="col-md-4">
-                  <h2>Development</h2>
-                  <p>Having hands on experience in creating innovative designs, I do offer design solutions which harness the new possibilities of internet presence.</p>
-               </div>
-        
-               <div class="col-md-4">
-                  <h2>UX/UI Design</h2>
-                  <p>I make sure that every project is pixel perfect. I will accompany you from vision to the final product, providing you the best possible user experience. </p>
-               </div>
-        
-               <div class="col-md-4">
-                  <h2>Planning</h2>
-                  <p>I seek to exceed your business goals through focused strategic thinking and attention to details. I help you craft all your ideas from zero into a digital project identifying all your needs.</p>
-               </div>
-            </div>
-         </div>
-                
+        <h2> Here are a few projects I've worked on recently:</h2>
+    </div>
 
-
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="row">
-                     <div class="col-md-6 text-center">
-                         <a href="vincent-van-gogh/index.html"><img src="vincent-van-gogh/assets/img/van-gogh.png" alt="Vincent van Gogh" class="img-fluid"></a>
-                         <p>A <a href="vincent-van-gogh/index.html" class="fancy-link">tribute</a> to the Dutch post-impressionist painter with an embedded YouTube video and set in the Google Merriweather font.</p>
-                      </div>
-                      <div class="col-md-6 text-center">
-                          <a href="hero-showcase/index.html"><img src="hero-showcase/assets/img/hero-showcase.png" alt="Vincent van Gogh" class="img-fluid"></a>
-                          <p>A <a href="hero-showcase/index.html" class="fancy-link">gallery</a> of web page hero blocks with animated text, background images and videos, and tinted ovelays.</p>
-                      </div>
+    
+    <div class="container">
+        <div class="row">
+           <div class="col-md-10 offset-md-1">
+              <div class="row">
+                 <div class="col-md-6 text-center">
+                     <a href="vincent-van-gogh/index.html"><img src="vincent-van-gogh/assets/img/van-gogh.png" alt="Vincent van Gogh" class="img-fluid"></a>
+                     <p>A <a href="vincent-van-gogh/index.html" class="fancy-link">tribute</a> to the Dutch post-impressionist painter with an embedded YouTube video and set in the Google Merriweather font.</p>
                   </div>
-               </div>
-            </div>
-         </div>
+                  <div class="col-md-6 text-center">
+                      <a href="hero-showcase/index.html"><img src="hero-showcase/assets/img/hero-showcase.png" alt="Vincent van Gogh" class="img-fluid"></a>
+                      <p>A <a href="hero-showcase/index.html" class="fancy-link">gallery</a> of web page hero blocks with animated text, background images and videos, and tinted ovelays.</p>
+                  </div>
+              </div>
+           </div>
+        </div>
+     </div>
 
-
-
-
+     
     <!-- Begin footer-->
     <footer class="container-fluid-portfolio">
 
@@ -145,8 +145,8 @@
 
         <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../portfolio/">Portfolio</a></li>
-            <li><a href="../contact/">Contact Form</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="../contact/">Contact</a></li>
         </ul>
         
 
@@ -201,3 +201,6 @@
   
 </body>
 </html>
+
+
+
