@@ -1,229 +1,609 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilyana Marinova | Web UI/UX Designer | Home Page</title>
-    <meta name="description" content="View a selection of my web design and development work. Let's create something great together!">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">   
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
-    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">    
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>Bilyana | UI/UX Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/build/tailwind.css">
 
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-    <!-- Customise Bootstrap for practical grid layouts -->
-    <link rel="stylesheet" href="assets/css/bootstrap-custom.css"> 
 
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="assets/css/global.css">
+        <!-- Link to Insites cookie privacy message  -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-   
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J7NKLGP3YG');
+        </script>
+    
     <style>
-        .container.text-center { padding-bottom: 20px }
-        .container.text-center h2 { 
-            margin-bottom: 0; 
-            padding-bottom: 0;
-            font-size: calc(24px + (30 - 24) * ((100vw - 320px)/(1600 - 320)));
-        
-        }
-        .container.text-center h2 span {
-            color: #ffc107;
-            background-color: #25262a;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        @media (max-width: 767px) {
-            .hero-10 { margin-bottom: 30px }
-        }
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
 
-    <!-- Google Font for man heading -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet"> 
-
-    <!-- Google Font for sub-headings -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"     rel="stylesheet"> 
-
-    <!-- Google Font for text -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-
-
-    <!-- Link to Insites cookie privacy message  -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-
-    <!-- Link to icons for Font Awesome 5 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NKLGP3YG"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-J7NKLGP3YG');
-    </script>
-    
 </head>
+<body class="bg-primary-100">
 
-<body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
 
-    <!-- Begin navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
-        <div class="container">
 
-            <!-- Website logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/website-logo.png" width="200" height="40"  alt="Website logo">
-            </a>
+    <div class="grid md:grid-rows-1 grid-flow-col"><!-- Content wrapper -->
+        <div class="ml-2 md:row-span-1 flex">
+            <nav>
+                <nav class="sticky top-6">
+                    <img class="h-8 md:h-12 w-auto pt-1 mt-4 ml-8 md:ml-14" src="img/website-logo.png" alt="logo">
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary-100 h-5 w-5 mt-4 ml-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                      </svg>
+                      
+                </div>
+                <ul class="text-secondary-200 font-second text-base mt-4 hidden md:block sticky top-10" id="menu">
+                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
+                        <a href="#section1" class="px-5 flex">
+                            <svg class="h-6 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 172 172">
+                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                                  <path d="M0 172V0h172v172z"/>
+                                  <path d="M86 14L7 87l7 8 8-6v62h53V97h22v54h54V89l7 6 7-8zm0 15l54 50v61h-32V86H65v54H32V79z" fill="#02de9a"/>
+                                </g>
+                              </svg>
+                            Home
+                        </a>
+                    </li>
 
-            <!-- Hamburger icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"><i class="fas fa-bars"></i>
-            </button>
 
-            <!-- Begin menu options -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                   <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
-                   <li class="nav-item"><a class="nav-link" href="javascript/">JavaScript</a></li>
-                  <li class="nav-item"><a class="nav-link" href="wordpress/">WordPress</a></li>
-                  <li class="nav-item"><a class="nav-link" href="http://dabigbang.000webhostapp.com/">Blog</a></li>
+                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
+                        <a href="#section2" class="px-5 flex">
+                            <svg class="w-5 h-6 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 172 172">
+                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                                  <path d="M0 172V0h172v172z"/>
+                                  <path d="M29 22c-8 0-15 6-15 14v129l29-29h100c8 0 15-6 15-14V36c0-8-7-14-15-14zm0 14h114v86H37l-8 8zm57 7c-15 0-21 13-21 22h14c0-2 1-8 7-8 7 0 7 7 7 8 0 7-14 21-14 28h14c0-7 14-18 14-29 1-10-8-21-21-21zm-7 57v15h14v-15z" fill="#02de9a"/>
+                                </g>
+                              </svg>
+                            About
+                        </a>
+                    </li>
 
-                      <!-- Call to action button-->
-                    <li class="nav-item">
-                        <a class="btn btn-outline-danger" href="contact/" role="button">
-                            <i class="far fa-envelope"></i> &nbsp;Hire me!
+                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
+                        <a href="#section3" class="px-5 flex">
+                            <svg class="w-5 h-6 mr-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 172 172">
+                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                                  <path d="M0 172V0h172v172z"/>
+                                  <path d="M11 32v97h70v11H54v11h64v-11H91v-11h70V32zm11 11h129v75H22zm64 11l-11 54h11l11-54zm-26 2L42 81l18 24 9-6-14-18 14-19zm52 0l-9 6 14 19-14 18 9 6 18-24z" fill="#02de9a"/>
+                                </g>
+                              </svg>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
+                        <a href="#section4" class="px-5 flex">
+                            <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 172 172">
+                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                                  <path d="M0 172V0h172v172z"/>
+                                  <path d="M48 22c-9 0-16 7-16 16v96c0 9 7 17 16 17h27v-11H48c-3 0-5-3-5-6V38c0-3 2-6 5-6h48v33h33v10h10V57l-35-35zm59 18l14 14h-14zm45 46c-3 0-7 1-9 4l-50 51-8 32 32-8 1-1 50-49c5-5 5-14 0-19l-6-6c-2-3-6-4-10-4zm1 11l2 1 5 5c2 2 2 3 0 5l-48 47-12 3 3-12 47-48 3-1z" fill="#02de9a"/>
+                                </g>
+                              </svg>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
+                        <a href="#section6" class="px-5 flex">
+                            <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 172 172">
+                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                                  <path d="M0 172V0h172v172z"/>
+                                  <path d="M29 29c-8 0-15 6-15 14v86c0 8 7 14 15 14h114c8 0 15-6 15-14V43c0-8-7-14-15-14zm0 14h114L86 79 29 43zm0 14l57 36 57-36v72H29z" fill="#02de9a"/>
+                                </g>
+                              </svg>
+                            Contact
                         </a>
                     </li>
                 </ul>
+                <ul class="grid grid-rows-3 grid-flow-col mt-40 pl-2" id="menu">
+                    <li class="row-span-3"><a href="https://www.linkedin.com/in/bilyana-marinova-6ab45b183"><svg class="h-6 w-6 mt-1 transition ease-out duration-200 transform hover:scale-110 hover:rotate-180" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#02de9a"><path d="M156.23893,0h-140.47786c-8.5944,0 -15.76107,7.16667 -15.76107,15.76107v140.47786c0,8.5944 7.16667,15.76107 15.76107,15.76107h140.47786c8.5944,0 15.76107,-7.16667 15.76107,-15.76107v-140.47786c0,-8.5944 -7.16667,-15.76107 -15.76107,-15.76107zM50.16667,143.33333h-28.66667v-78.83333h28.66667zM35.83333,55.17774c-8.5944,0 -14.33333,-5.73893 -14.33333,-12.9056c0,-7.86654 5.73893,-13.60547 14.33333,-13.60547c8.5944,0 14.33333,5.73893 14.33333,12.9056c0,7.86654 -5.73893,13.60547 -14.33333,13.60547zM150.5,143.33333h-28.66667v-43c0,-11.47786 -7.89453,-14.33333 -10.02213,-14.33333c-2.1556,0 -11.47787,1.42774 -11.47787,14.33333c0,1.42774 0,43 0,43h-28.66667v-78.83333h28.66667v11.47787c4.3112,-6.4668 11.47787,-11.47787 25.08333,-11.47787c13.60547,0 25.08333,10.75 25.08333,35.83333z"></path></g></g></svg></a></li>
+                    <li class="row-span-3"><a href="https://github.com/bilyanam"><svg class="h-8 w-8 transition ease-out duration-200 transform hover:scale-110 hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 172 172">
+                        <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                          <path d="M0 172V0h172v172z"/>
+                          <path d="M78 15a72 72 0 00-13 139v-16h-7c-10 0-14-8-15-13l-4-7-3-2 3-1c4 0 8 5 9 7 4 6 8 7 10 7l7-1c0-5 2-10 7-13-17-4-29-13-29-29 0-8 4-16 9-21l-2-11c0-2 0-7 2-11 0 0 10 0 20 9l14-2 14 2c10-9 20-9 20-9 2 4 2 9 2 11 0 6-1 9-2 11 5 5 9 12 9 21 0 16-12 25-29 29 5 3 8 10 8 16v24c29-10 50-37 50-68 0-43-37-77-80-72z" fill="#02de9a"/>
+                        </g>
+                      </svg>
+                      </a></li>
+                    <li class="row-span-3"><a href="instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition ease-out duration-200 transform hover:scale-110 hover:rotate-180" width="64" height="64" viewBox="0 0 172 172">
+                        <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                          <path d="M0 172V0h172v172z"/>
+                          <path d="M58 19c-22 0-39 17-39 39v56c0 22 17 39 39 39h56c22 0 39-17 39-39V58c0-22-17-39-39-39zm68 21a5 5 0 110 11 5 5 0 010-11zM86 51a35 35 0 110 70 35 35 0 010-70zm0 11a24 24 0 100 48 24 24 0 000-48z" fill="#02de9a"/>
+                        </g>
+                      </svg>
+                      
+                      </a></li>
+                </ul>
+            </nav>
+        </div> <!-- End nav -->
+        
+        <main class="px-16 py-6 md:col-span-2">
+
+
+            <header id="section1">
+                <h2 class="text-4xl md:text-8xl text-secondary-200 font-body mt-12 selection:bg-primary-100 selection:text-secondary-100 text-hover">Hi,</h2>
+                <h2 class="text-4xl md:text-8xl text-secondary-200 font-body selection:bg-primary-100 selection:text-secondary-100 text-hover">I'm &nbsp; <span class="md:hidden">&nbsp;</span> ilyana</h2>
+                <h3 class="selection:bg-primary-100 selection:text-pink/80 text-2lg md:text-6xl text-secondary-100 font-second font-extralight mt-5">Front-end Developer</h3>
+                <!-- svg for md screen-->
+                <svg class="hidden md:block relative left-32 bottom-52" width="100" height="123" viewBox="0 0 44 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 65V20h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 2 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H6zm5-25h12c7 0 10-2 10-8 0-5-3-8-10-8H11v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H11v17z" fill="#02DE9A"/>
+                    <path d="M8 66V21h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 1 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H8zm5-25h12c7 0 10-3 10-8s-3-8-10-8H13v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H13v17z" fill="#DE0246"/>
+                  </svg>
+                                  
+                    <!-- svg for sm screen-->
+                    <svg class="md:hidden relative left-18 bottom-24" width="28" height="54" viewBox="0 0 44 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 65V20h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 2 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H6zm5-25h12c7 0 10-2 10-8 0-5-3-8-10-8H11v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H11v17z" fill="#02DE9A"/>
+                        <path d="M8 66V21h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 1 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H8zm5-25h12c7 0 10-3 10-8s-3-8-10-8H13v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H13v17z" fill="#DE0246"/>
+                      </svg>
+                      
+                        <style>
+                            .text-hover span {
+                            transition: color 1s;
+                            transition-delay: 200ms;
+
+                        }
+
+                        .text-hover span:hover {
+                            transition: color 0s;
+                            color: #DE0246;
+                        }
+
+                        </style>
+
+                        </header>
+            <div class="flex justify-start">
+                <a href="#section6" class="py-4 px-6 text-sm cursor-pointer tracking-wider text-secondary-100 md:text-lg font-second md:border-2 border-secondary-100  md:hover:bg-secondary-100 md:hover:text-pink  font-semibold md:hover:shadow-inner ease-out duration-500 md:hover:scale-110 selection:bg-primary-100 selection:text-pink">Contact Me!</a>
+            </div>
+
+            <div class="absolute left-4 md:left-40 bottom-4">
+                <svg class="animate-bounce" width="24" height="79" viewBox="0 0 24 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="scroll">
+                    <path id="scroll down" d="M9.7178 3.64506C9.71207 3.09043 9.78455 2.55665 9.93526 2.04373C10.0947 1.53939 10.2943 1.14297 10.534 0.854475L11.2663 1.26293C11.0439 1.55124 10.8613 1.91281 10.7184 2.34765C10.5843 2.78239 10.5196 3.23375 10.5244 3.70173C10.5309 4.32569 10.631 4.78402 10.8247 5.0767C11.0271 5.37795 11.306 5.52674 11.6613 5.52307C11.9126 5.52047 12.1068 5.43613 12.2437 5.27003C12.3894 5.10385 12.4955 4.89474 12.5623 4.64271C12.6377 4.39058 12.7079 4.05617 12.7729 3.63948C12.8712 3.08376 12.9705 2.63638 13.071 2.29732C13.1802 1.95818 13.3635 1.66593 13.621 1.42059C13.8786 1.18391 14.237 1.0632 14.6963 1.05845C15.2683 1.05254 15.7387 1.28602 16.1076 1.7589C16.4766 2.23178 16.6654 2.89286 16.6742 3.74215C16.6787 4.18412 16.6227 4.62673 16.5059 5.06996C16.3978 5.5131 16.2499 5.87865 16.0622 6.1666L15.3171 5.77129C15.7012 5.20395 15.8893 4.5303 15.8812 3.75035C15.8751 3.16104 15.7665 2.71581 15.5554 2.41464C15.3444 2.12214 15.0698 1.97764 14.7319 1.98113C14.4719 1.98382 14.2647 2.0683 14.1105 2.23457C13.9563 2.40951 13.8415 2.62304 13.7661 2.87517C13.6993 3.1272 13.6292 3.47461 13.5558 3.9174C13.4575 4.46444 13.358 4.90316 13.2574 5.23355C13.1568 5.56394 12.9821 5.84743 12.7332 6.08402C12.4843 6.3206 12.1388 6.44118 11.6969 6.44575C11.0989 6.45193 10.6197 6.20554 10.2591 5.70658C9.90739 5.21619 9.72694 4.52902 9.7178 3.64506ZM9.79391 11.006C9.78692 10.3301 9.92797 9.7219 10.2171 9.18155C10.5063 8.64986 10.9136 8.22963 11.4391 7.92085C11.9733 7.61197 12.574 7.45409 13.2413 7.44719C13.9086 7.44029 14.5081 7.58577 15.0399 7.88362C15.5717 8.18147 15.9876 8.59319 16.2877 9.11878C16.588 9.65304 16.7416 10.2582 16.7485 10.9341C16.7546 11.5234 16.6431 12.0489 16.4138 12.5107C16.1933 12.981 15.8635 13.3527 15.4243 13.6259L14.9492 12.9418C15.2849 12.713 15.5332 12.4244 15.6943 12.0761C15.864 11.7276 15.9468 11.3498 15.9426 10.9424C15.9375 10.4485 15.8202 10.0033 15.5908 9.60701C15.3701 9.21927 15.0549 8.91485 14.6453 8.69374C14.2357 8.4813 13.771 8.37776 13.251 8.38314C12.7223 8.3886 12.2555 8.50177 11.8504 8.72264C11.4541 8.95208 11.1453 9.26296 10.924 9.65527C10.7115 10.0562 10.6078 10.5036 10.6129 10.9976C10.6171 11.4049 10.7033 11.781 10.8715 12.1259C11.0398 12.4709 11.2941 12.7543 11.6344 12.9761L11.1735 13.6699C10.7288 13.4058 10.387 13.041 10.1482 12.5754C9.918 12.1098 9.79991 11.5867 9.79391 11.006ZM15.4132 16.3234C15.8747 16.5353 16.2247 16.8524 16.4631 17.2746C16.7015 17.7055 16.8241 18.2373 16.8306 18.8699L15.9336 18.8792L15.9444 18.658C15.9369 17.9387 15.7101 17.3777 15.2639 16.975C14.8177 16.5722 14.196 16.375 13.3987 16.3832L9.91488 16.4193L9.90534 15.4963L16.743 15.4256L16.7521 16.3096L15.4132 16.3234ZM9.92148 23.3443C9.91467 22.6857 10.0559 22.0905 10.345 21.5588C10.6429 21.027 11.0546 20.6068 11.5801 20.298C12.1056 19.9892 12.702 19.8314 13.3693 19.8245C14.0366 19.8176 14.6361 19.963 15.1679 20.2609C15.6997 20.5587 16.1156 20.9705 16.4157 21.4961C16.7158 22.0216 16.8693 22.6138 16.8761 23.2724C16.8829 23.931 16.7417 24.5262 16.4525 25.0579C16.1634 25.5895 15.756 26.0054 15.2304 26.3056C14.7049 26.6143 14.1085 26.7722 13.4412 26.7791C12.7739 26.786 12.1743 26.6405 11.6426 26.3427C11.1109 26.0535 10.6907 25.6461 10.3819 25.1206C10.0818 24.595 9.92829 24.0029 9.92148 23.3443ZM10.7404 23.3358C10.7455 23.8211 10.8583 24.2533 11.0789 24.6324C11.3082 25.02 11.6277 25.3201 12.0372 25.5325C12.4468 25.745 12.9115 25.8485 13.4315 25.8431C13.9515 25.8378 14.414 25.7246 14.8191 25.5038C15.2241 25.2829 15.533 24.9764 15.7456 24.5841C15.967 24.2005 16.0752 23.766 16.0702 23.2807C16.0651 22.7954 15.948 22.3589 15.7186 21.9713C15.498 21.5922 15.1829 21.2921 14.7732 21.071C14.3637 20.8586 13.8989 20.755 13.379 20.7604C12.859 20.7658 12.3965 20.8789 11.9914 21.0998C11.5864 21.3293 11.2732 21.6359 11.0518 22.0195C10.8392 22.4118 10.7354 22.8505 10.7404 23.3358ZM19.6873 28.599L19.6969 29.5219L10.0514 29.6217L10.0418 28.6987L19.6873 28.599ZM19.7234 32.09L19.733 33.013L10.0875 33.1127L10.0779 32.1897L19.7234 32.09ZM19.8592 45.2229L10.2137 45.3226L10.2046 44.4387L11.5565 44.4247C11.0943 44.1521 10.7396 43.7874 10.4921 43.3306C10.2448 42.8825 10.1182 42.3724 10.1123 41.8005C10.1057 41.1592 10.247 40.577 10.5363 40.054C10.8255 39.531 11.233 39.1194 11.7586 38.8193C12.2842 38.5192 12.8849 38.3656 13.5609 38.3586C14.2369 38.3516 14.8407 38.4927 15.3724 38.7819C15.9041 39.0711 16.3156 39.4742 16.607 39.9912C16.907 40.5081 17.0603 41.0873 17.0669 41.7286C17.0727 42.2832 16.9608 42.7827 16.7314 43.2271C16.5108 43.6801 16.1809 44.0518 15.7419 44.3424L19.8497 44.2999L19.8592 45.2229ZM10.9321 41.87C10.937 42.3466 11.0498 42.7745 11.2704 43.1536C11.4997 43.5412 11.8192 43.8413 12.2287 44.0537C12.6384 44.2748 13.1032 44.3827 13.6231 44.3773C14.1431 44.3719 14.6056 44.2545 15.0106 44.0249C15.4156 43.8041 15.7245 43.4975 15.9371 43.1053C16.1585 42.7217 16.2667 42.2915 16.2618 41.8149C16.2568 41.3296 16.1396 40.8931 15.9102 40.5054C15.6896 40.1264 15.3745 39.8263 14.9649 39.6052C14.5553 39.3927 14.0906 39.2892 13.5706 39.2946C13.0506 39.3 12.5881 39.4131 12.183 39.6339C11.778 39.8635 11.4649 40.1701 11.2435 40.5537C11.0309 40.9459 10.9271 41.3847 10.9321 41.87ZM10.2042 50.6885C10.1974 50.0299 10.3386 49.4347 10.6278 48.9031C10.9256 48.3713 11.3373 47.951 11.8628 47.6422C12.3883 47.3334 12.9847 47.1756 13.652 47.1687C14.3193 47.1618 14.9188 47.3073 15.4506 47.6051C15.9824 47.903 16.3983 48.3147 16.6984 48.8403C16.9986 49.3659 17.152 49.958 17.1588 50.6166C17.1656 51.2753 17.0245 51.8704 16.7353 52.4021C16.4461 52.9338 16.0387 53.3497 15.5131 53.6498C14.9876 53.9586 14.3912 54.1164 13.7239 54.1233C13.0566 54.1302 12.4571 53.9848 11.9253 53.6869C11.3936 53.3977 10.9734 52.9904 10.6646 52.4649C10.3645 51.9393 10.211 51.3472 10.2042 50.6885ZM11.0232 50.6801C11.0282 51.1654 11.141 51.5976 11.3616 51.9766C11.5909 52.3643 11.9104 52.6643 12.3199 52.8768C12.7295 53.0892 13.1943 53.1928 13.7142 53.1874C14.2342 53.182 14.6967 53.0689 15.1018 52.848C15.5069 52.6271 15.8157 52.3206 16.0283 51.9284C16.2497 51.5447 16.3579 51.1103 16.3529 50.625C16.3479 50.1397 16.2307 49.7032 16.0013 49.3155C15.7807 48.9365 15.4656 48.6364 15.056 48.4153C14.6464 48.2028 14.1816 48.0993 13.6617 48.1047C13.1417 48.11 12.6792 48.2231 12.2741 48.444C11.8691 48.6735 11.5559 48.9801 11.3346 49.3638C11.1219 49.756 11.0181 50.1948 11.0232 50.6801ZM17.264 65.8173L10.3996 63.3012L10.3906 62.4302L15.971 60.2144L10.346 58.1144L10.337 57.2435L17.148 54.5989L17.1571 55.4829L11.3686 57.6878L17.202 59.8246L17.2102 60.6176L11.4221 62.8616L17.2553 64.9724L17.264 65.8173ZM17.3664 70.6903C17.3753 71.5483 17.131 72.2311 16.6335 72.739C16.1448 73.2554 15.4239 73.5185 14.4706 73.5284L10.5058 73.5694L10.4962 72.6464L14.37 72.6064C15.0807 72.599 15.6205 72.4158 15.9894 72.0566C16.3584 71.6974 16.5395 71.1885 16.5327 70.5299C16.5251 69.7933 16.298 69.2106 15.8516 68.7819C15.4139 68.3617 14.8094 68.1556 14.0381 68.1636L10.4503 68.2007L10.4407 67.2777L17.2784 67.207L17.2875 68.091L16.0266 68.104C16.4452 68.351 16.7694 68.6944 16.9993 69.134C17.2379 69.5822 17.3603 70.101 17.3664 70.6903Z" fill="#DE0246"/>
+                    </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-100 mt-2 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+              </svg>
+              </div>
+
+              <div class="hidden md:block absolute left-[1300px] bottom-4">
+                <svg class="animate-bounce" width="24" height="79" viewBox="0 0 24 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="scroll">
+                    <path id="scroll down" d="M9.7178 3.64506C9.71207 3.09043 9.78455 2.55665 9.93526 2.04373C10.0947 1.53939 10.2943 1.14297 10.534 0.854475L11.2663 1.26293C11.0439 1.55124 10.8613 1.91281 10.7184 2.34765C10.5843 2.78239 10.5196 3.23375 10.5244 3.70173C10.5309 4.32569 10.631 4.78402 10.8247 5.0767C11.0271 5.37795 11.306 5.52674 11.6613 5.52307C11.9126 5.52047 12.1068 5.43613 12.2437 5.27003C12.3894 5.10385 12.4955 4.89474 12.5623 4.64271C12.6377 4.39058 12.7079 4.05617 12.7729 3.63948C12.8712 3.08376 12.9705 2.63638 13.071 2.29732C13.1802 1.95818 13.3635 1.66593 13.621 1.42059C13.8786 1.18391 14.237 1.0632 14.6963 1.05845C15.2683 1.05254 15.7387 1.28602 16.1076 1.7589C16.4766 2.23178 16.6654 2.89286 16.6742 3.74215C16.6787 4.18412 16.6227 4.62673 16.5059 5.06996C16.3978 5.5131 16.2499 5.87865 16.0622 6.1666L15.3171 5.77129C15.7012 5.20395 15.8893 4.5303 15.8812 3.75035C15.8751 3.16104 15.7665 2.71581 15.5554 2.41464C15.3444 2.12214 15.0698 1.97764 14.7319 1.98113C14.4719 1.98382 14.2647 2.0683 14.1105 2.23457C13.9563 2.40951 13.8415 2.62304 13.7661 2.87517C13.6993 3.1272 13.6292 3.47461 13.5558 3.9174C13.4575 4.46444 13.358 4.90316 13.2574 5.23355C13.1568 5.56394 12.9821 5.84743 12.7332 6.08402C12.4843 6.3206 12.1388 6.44118 11.6969 6.44575C11.0989 6.45193 10.6197 6.20554 10.2591 5.70658C9.90739 5.21619 9.72694 4.52902 9.7178 3.64506ZM9.79391 11.006C9.78692 10.3301 9.92797 9.7219 10.2171 9.18155C10.5063 8.64986 10.9136 8.22963 11.4391 7.92085C11.9733 7.61197 12.574 7.45409 13.2413 7.44719C13.9086 7.44029 14.5081 7.58577 15.0399 7.88362C15.5717 8.18147 15.9876 8.59319 16.2877 9.11878C16.588 9.65304 16.7416 10.2582 16.7485 10.9341C16.7546 11.5234 16.6431 12.0489 16.4138 12.5107C16.1933 12.981 15.8635 13.3527 15.4243 13.6259L14.9492 12.9418C15.2849 12.713 15.5332 12.4244 15.6943 12.0761C15.864 11.7276 15.9468 11.3498 15.9426 10.9424C15.9375 10.4485 15.8202 10.0033 15.5908 9.60701C15.3701 9.21927 15.0549 8.91485 14.6453 8.69374C14.2357 8.4813 13.771 8.37776 13.251 8.38314C12.7223 8.3886 12.2555 8.50177 11.8504 8.72264C11.4541 8.95208 11.1453 9.26296 10.924 9.65527C10.7115 10.0562 10.6078 10.5036 10.6129 10.9976C10.6171 11.4049 10.7033 11.781 10.8715 12.1259C11.0398 12.4709 11.2941 12.7543 11.6344 12.9761L11.1735 13.6699C10.7288 13.4058 10.387 13.041 10.1482 12.5754C9.918 12.1098 9.79991 11.5867 9.79391 11.006ZM15.4132 16.3234C15.8747 16.5353 16.2247 16.8524 16.4631 17.2746C16.7015 17.7055 16.8241 18.2373 16.8306 18.8699L15.9336 18.8792L15.9444 18.658C15.9369 17.9387 15.7101 17.3777 15.2639 16.975C14.8177 16.5722 14.196 16.375 13.3987 16.3832L9.91488 16.4193L9.90534 15.4963L16.743 15.4256L16.7521 16.3096L15.4132 16.3234ZM9.92148 23.3443C9.91467 22.6857 10.0559 22.0905 10.345 21.5588C10.6429 21.027 11.0546 20.6068 11.5801 20.298C12.1056 19.9892 12.702 19.8314 13.3693 19.8245C14.0366 19.8176 14.6361 19.963 15.1679 20.2609C15.6997 20.5587 16.1156 20.9705 16.4157 21.4961C16.7158 22.0216 16.8693 22.6138 16.8761 23.2724C16.8829 23.931 16.7417 24.5262 16.4525 25.0579C16.1634 25.5895 15.756 26.0054 15.2304 26.3056C14.7049 26.6143 14.1085 26.7722 13.4412 26.7791C12.7739 26.786 12.1743 26.6405 11.6426 26.3427C11.1109 26.0535 10.6907 25.6461 10.3819 25.1206C10.0818 24.595 9.92829 24.0029 9.92148 23.3443ZM10.7404 23.3358C10.7455 23.8211 10.8583 24.2533 11.0789 24.6324C11.3082 25.02 11.6277 25.3201 12.0372 25.5325C12.4468 25.745 12.9115 25.8485 13.4315 25.8431C13.9515 25.8378 14.414 25.7246 14.8191 25.5038C15.2241 25.2829 15.533 24.9764 15.7456 24.5841C15.967 24.2005 16.0752 23.766 16.0702 23.2807C16.0651 22.7954 15.948 22.3589 15.7186 21.9713C15.498 21.5922 15.1829 21.2921 14.7732 21.071C14.3637 20.8586 13.8989 20.755 13.379 20.7604C12.859 20.7658 12.3965 20.8789 11.9914 21.0998C11.5864 21.3293 11.2732 21.6359 11.0518 22.0195C10.8392 22.4118 10.7354 22.8505 10.7404 23.3358ZM19.6873 28.599L19.6969 29.5219L10.0514 29.6217L10.0418 28.6987L19.6873 28.599ZM19.7234 32.09L19.733 33.013L10.0875 33.1127L10.0779 32.1897L19.7234 32.09ZM19.8592 45.2229L10.2137 45.3226L10.2046 44.4387L11.5565 44.4247C11.0943 44.1521 10.7396 43.7874 10.4921 43.3306C10.2448 42.8825 10.1182 42.3724 10.1123 41.8005C10.1057 41.1592 10.247 40.577 10.5363 40.054C10.8255 39.531 11.233 39.1194 11.7586 38.8193C12.2842 38.5192 12.8849 38.3656 13.5609 38.3586C14.2369 38.3516 14.8407 38.4927 15.3724 38.7819C15.9041 39.0711 16.3156 39.4742 16.607 39.9912C16.907 40.5081 17.0603 41.0873 17.0669 41.7286C17.0727 42.2832 16.9608 42.7827 16.7314 43.2271C16.5108 43.6801 16.1809 44.0518 15.7419 44.3424L19.8497 44.2999L19.8592 45.2229ZM10.9321 41.87C10.937 42.3466 11.0498 42.7745 11.2704 43.1536C11.4997 43.5412 11.8192 43.8413 12.2287 44.0537C12.6384 44.2748 13.1032 44.3827 13.6231 44.3773C14.1431 44.3719 14.6056 44.2545 15.0106 44.0249C15.4156 43.8041 15.7245 43.4975 15.9371 43.1053C16.1585 42.7217 16.2667 42.2915 16.2618 41.8149C16.2568 41.3296 16.1396 40.8931 15.9102 40.5054C15.6896 40.1264 15.3745 39.8263 14.9649 39.6052C14.5553 39.3927 14.0906 39.2892 13.5706 39.2946C13.0506 39.3 12.5881 39.4131 12.183 39.6339C11.778 39.8635 11.4649 40.1701 11.2435 40.5537C11.0309 40.9459 10.9271 41.3847 10.9321 41.87ZM10.2042 50.6885C10.1974 50.0299 10.3386 49.4347 10.6278 48.9031C10.9256 48.3713 11.3373 47.951 11.8628 47.6422C12.3883 47.3334 12.9847 47.1756 13.652 47.1687C14.3193 47.1618 14.9188 47.3073 15.4506 47.6051C15.9824 47.903 16.3983 48.3147 16.6984 48.8403C16.9986 49.3659 17.152 49.958 17.1588 50.6166C17.1656 51.2753 17.0245 51.8704 16.7353 52.4021C16.4461 52.9338 16.0387 53.3497 15.5131 53.6498C14.9876 53.9586 14.3912 54.1164 13.7239 54.1233C13.0566 54.1302 12.4571 53.9848 11.9253 53.6869C11.3936 53.3977 10.9734 52.9904 10.6646 52.4649C10.3645 51.9393 10.211 51.3472 10.2042 50.6885ZM11.0232 50.6801C11.0282 51.1654 11.141 51.5976 11.3616 51.9766C11.5909 52.3643 11.9104 52.6643 12.3199 52.8768C12.7295 53.0892 13.1943 53.1928 13.7142 53.1874C14.2342 53.182 14.6967 53.0689 15.1018 52.848C15.5069 52.6271 15.8157 52.3206 16.0283 51.9284C16.2497 51.5447 16.3579 51.1103 16.3529 50.625C16.3479 50.1397 16.2307 49.7032 16.0013 49.3155C15.7807 48.9365 15.4656 48.6364 15.056 48.4153C14.6464 48.2028 14.1816 48.0993 13.6617 48.1047C13.1417 48.11 12.6792 48.2231 12.2741 48.444C11.8691 48.6735 11.5559 48.9801 11.3346 49.3638C11.1219 49.756 11.0181 50.1948 11.0232 50.6801ZM17.264 65.8173L10.3996 63.3012L10.3906 62.4302L15.971 60.2144L10.346 58.1144L10.337 57.2435L17.148 54.5989L17.1571 55.4829L11.3686 57.6878L17.202 59.8246L17.2102 60.6176L11.4221 62.8616L17.2553 64.9724L17.264 65.8173ZM17.3664 70.6903C17.3753 71.5483 17.131 72.2311 16.6335 72.739C16.1448 73.2554 15.4239 73.5185 14.4706 73.5284L10.5058 73.5694L10.4962 72.6464L14.37 72.6064C15.0807 72.599 15.6205 72.4158 15.9894 72.0566C16.3584 71.6974 16.5395 71.1885 16.5327 70.5299C16.5251 69.7933 16.298 69.2106 15.8516 68.7819C15.4139 68.3617 14.8094 68.1556 14.0381 68.1636L10.4503 68.2007L10.4407 67.2777L17.2784 67.207L17.2875 68.091L16.0266 68.104C16.4452 68.351 16.7694 68.6944 16.9993 69.134C17.2379 69.5822 17.3603 70.101 17.3664 70.6903Z" fill="#DE0246"/>
+                    </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-100 mt-2 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+              </svg>
+              </div>
+
+              <div>
+                <h4 class="text-xl mt-14 text-secondary-200 font-second selection:bg-pink selection:text-secondary-100">What do I do, you ask?</h4>
+
+                <div class="mt-8 grid md:grid-cols-3 gap-10">
+                    <!-- Cards go here -->
+
+                    <div class="bg-primary-200 rounded-md overflow-hidden shadow p-2 hover:shadow-lg">
+                        <span class="block text-2xl text-secondary-100 font-body selection:bg-primary-200 selection:text-pink">Development</span>
+                        <span class="block text-lg text-secondary-200 font-second mt-2 selection:bg-secondary-100 selection:text-pink">Having hands on experience in creating innovative designs, I do offer design solutions which harness the new possibilities of internet presence.</span>
+                    </div>
+
+                <div class="bg-primary-200 rounded-md overflow-hidden shadow p-2 hover:shadow-lg">
+                    <span class="block text-2xl text-secondary-100 font-body selection:bg-primary-200 selection:text-pink">UX/UI Design</span>
+                    <span class="block text-lg text-secondary-200 font-second mt-2 selection:bg-pink selection:text-secondary-100">I make sure that every project is pixel perfect. I will accompany you from vision to the final product, providing you the best possible user experience.</span>
+                </div>
+
+
+            <div class="bg-primary-200 rounded-md overflow-hidden shadow p-2 hover:shadow-lg">
+                <span class="block text-2xl text-secondary-100 font-body selection:bg-primary-200 selection:text-pink">Planning</span>
+                <span class="block text-lg text-secondary-200 font-second mt-2 selection:bg-secondary-100 selection:text-pink">I seek to exceed your business goals through focused strategic thinking and attention to details. I help you craft all your ideas from zero into a digital project identifying all your needs.</span>
             </div>
         </div>
-    </nav>
-   <!-- End navbar -->
 
-   <div class="container-fluid hero-block hero-10">
+        
+            <!-- Cards end here -->
+
+                        <!-- About me starts here -->
+                        <h2 class=" text-hover text-4xl text-secondary-100 font-body mt-14 selection:bg-primary-100 selection:text-pink" id="section2">And if you want to know a bit about me...</h2>
+
+                        <div class="pt-8">
+                            <h3 class="text-sm text-secondary-200 font-second selection:bg-pink selection:text-primary-100 mt-1 mb-2">Choose bio length:</h3>
+                
+                            <div class="">
+                
+                            <label class="inline-flex items-center ml-8 mr-4">
+                            <input type="radio" class="form-radio h-5 w-5 text-pink cursor-pointer" checked onclick="check();" name="bio" id="bio1" />&nbsp;
+                            </label>
+                
+                            <label class="inline-flex items-center mt-3  mr-4">
+                            <input type="radio" class="form-radio h-5 w-5 text-pink cursor-pointer" checked  onclick="check();" name="bio" id="bio2"/>&nbsp;
+                            </label>
+                
+                            <label class="inline-flex items-center mt-3  mr-4">
+                            <input type="radio" class="form-radio h-5 w-5 text-pink cursor-pointer" checked  onclick="check();" name="bio" id="bio3"/>&nbsp;
+                            </label>
+                
+                            <label class="inline-flex items-center mt-3  mr-4">
+                            </label>
+                
+                
+                            <p class="font-second text-xs mr-8 mb-8 text-secondary-100 font-light selection:bg-primary-100 selection:text-pink">Very short <span class="ml-14">Long</span></p>
+                
+                            </div>
+                        </div>
+                
+                            <style>
+                
+                            </style>
+                
+                            <script>
+                                function check() {
+                                    if (document.getElementById('bio1').checked) {
+                                        document.getElementById('ifBio1').style.display = 'block';
+                                    }
+                                    else document.getElementById('ifBio1').style.display = 'none';
+                
+                                    if (document.getElementById('bio2').checked) {
+                                        document.getElementById('ifBio2').style.display = 'block';
+                                    }
+                                    else document.getElementById('ifBio2').style.display = 'none';
+                
+                                    if (document.getElementById('bio3').checked) {
+                                        document.getElementById('ifBio3').style.display = 'block';
+                                    }
+                                    else document.getElementById('ifBio3').style.display = 'none';
+                                }
+                
+                            </script>
+                
+                            
+                                <div id="ifBio1" class="hidden">
+                                    <p class="text-xl text-secondary-200 font-second mt-4 selection:bg-primary-100 selection:text-pink">Hi, I'm Bilyana!</p>
+                                </div>
+                
+                                <div id="ifBio2" class="hidden">
+                                    <p class="text-xl text-secondary-200 font-second mt-4 selection:bg-primary-100 selection:text-pink w-1/2">Hey, I'm Bilyana. I'm based in Ireland and while I'm hiding from the temperamental weather here (yes, even in the summer), I code things for the internet!</p>
+                                </div>
+                
+                                <div id="ifBio3" class="hidden md:grid-rows-4 w-1/2 text-start" >
+                                <p class="text-xl text-secondary-200 font-second mt-4 selection:bg-primary-100 selection:text-pink">Hey, I'm Bilyana - a digital craftswoman, born in Bulgaria, based in Ireland. I've been a big fan of computers and video games (also tattoos, doggos, gym, food, art, and food) ever since I was a lil' human.</p>
+                                <p class="text-xl text-secondary-200 font-second mt-4 selection:bg-primary-100 selection:text-pink text-start">Finally, in 2020, I decided to teach myself how to build stuff for the web, and discovered my love for it. A bit weird, right? It's a space of constant improvement and new technology, so it keeps me busy and interested.</p>
+                                <p class="text-xl text-secondary-200 font-second mt-8 selection:bg-primary-100 selection:text-pink text-start">I use HTML, CSS, Tailwind CSS, JavaScript and WordPress. Though constantly changing, my focus now is on JavaScript and Three.js and I'm always up for learning new things.</p>
+                                <p class="text-xl text-secondary-200 font-second selection:bg-primary-100 selection:text-pink text-start mt-2">I also like writing. Nothing in particular, mainly whatever is in my head on the day. If you want to check out my words you can do so here.</p>
+
+                                </div>
     
-        <!-- Background video --->
-        <video loop muted autoplay playsinline poster="assets/videos/hero-home.jpg" class="background-video" disablepictureinpicture preload="auto">
-            <source src="assets/videos/home-video.mp4" type="video/mp4">
-        </video>
+                                                <!-- About me ends here -->
 
-        <!-- Optional overlay --->
-        <div class="bg-overlay"></div>
+            </div>
 
-        <!-- Hero block content --->
-        <div class="background-video-content">
-            
-            <h1>Bilyana Marinova</h1>
-            <h2>Web / UI Designer</h2>
+            <!-- Portfolio starts here -->
+                <h2 class="text-hover text-5xl text-secondary-100 font-body mt-14 mb-8 selection:bg-primary-100 selection:text-pink" id="section3">My portfolio</h2>
+                <p class="md:text-lg text-secondary-200 font-second mb-8 selection:bg-primary-100 selection:text-secondary-100">A small few projects I've worked on recently. More to come soon...</p>
+
+
+                <div class="mt-16 grid md:grid-cols-2">
+                               <!-- Cards go here -->
+
+                                <!-- van gogh starts here -->
+
+                                <div class="pl-3">
+                                    <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div">
+                                        <div>
+                                        <div  class="w-full image-cover rounded-t-md"></div>
+                                        <div class="py-8 px-4 bg-primary-200 rounded-b-md group-hover:opacity-25 text-lg text-secondary-200 font-second mt-2 selection:bg-pink selection:text-secondary-100">
+                                            <span class="text-lg text-secondary-200 font-second">A <span class="text-pink selection:text-primary-100">tribute</span> to the Dutch post-impressionist painter with an embedded YouTube video and set in the Google Merriweather font.
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="absolute opacity-0 group-hover:opacity-100">
+                                       <div class="pt-8 text-center">
+                                           <button class="text-center rounded-full h-24 w-24 bg-secondary-100 font-second text-base"><a href="https://bilyanam.github.io/portfolio/vincent-van-gogh/index.html" class="text-primary-100 selection:text-primary-100 uppercase" target="van gogh">View project</a></button>
+                                           </div>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                                <style>
+                                  .content-div{
+                                  background-image:url("./img/van-gogh.jpg");
+                                  background-repeat: no-repeat;
+                                  background-size: 450px, cover;
+                                }
+                                  .content-div:hover{
+                                    background-image:
+                                    linear-gradient(to right,
+                                    rgba(2, 222, 154, 0.601), rgba(222, 2, 70, 0.601) ),
+                                     url("./img/van-gogh.jpg");
+                                     background-size: 450px;
+                                    }
+                                
+                                    .image-cover  {
+                                      height:200px;
+                                    }
+
+                                  </style>
+
+                                  <!-- van gogh ends here -->
+
+                                                    <!-- hero blocks start here -->
+
+                                  <div class="pr-3">
+                                    <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div1">
+                                        <div>
+                                        <div  class="w-full image-cover rounded-t-md"></div>
+                                        <div class="py-8 px-4 pb-12 bg-primary-200 rounded-b-md group-hover:opacity-25 text-lg text-secondary-200 font-second mt-6 selection:bg-pink selection:text-secondary-100">
+                                            <span class="text-lg text-secondary-200 font-second">A <span class="text-pink selection:text-primary-100">gallery</span> of web page hero blocks with animated text, background images and videos, and tinted overlays.
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="absolute opacity-0 group-hover:opacity-100">
+                                       <div class="pt-8 text-center">
+                                           <button class="text-center rounded-full h-24 w-24 bg-secondary-100 font-second text-base"><a href="https://bilyanam.github.io/portfolio/hero-showcase/index.html" class="text-primary-100 selection:text-primary-100 uppercase" target="van gogh">View project</a></button>
+                                           </div>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                                <style>
+                                  .content-div1{
+                                  background-image:url("./img/hero-showcase-2.jpg");
+                                  background-repeat: no-repeat;
+                                  background-size: 490px, cover;
+                                }
+                                  .content-div1:hover{
+                                    background-image:
+                                    linear-gradient(to right,
+                                    rgba(2, 222, 154, 0.601), rgba(222, 2, 70, 0.601) ),
+                                     url("./img/hero-showcase-2.jpg");
+                                     background-size: 490px;
+                                    }
+                                
+                                    .image-cover  {
+                                      height:200px;
+                                    }
+
+                                  </style>
+
+                                                <!-- hero blocks ends here -->
+
+            </div>
+
+
+                        <!-- cards ends here -->
+                    <!-- Blog starts here (add a few articles) -->
+
+                    <!-- Blog ends here -->
+            <!-- Contact form starts here -->
+            <form class="mt-16 flex min-h-screen">
+                <div class=" w-full p-8 text-secondary-200">
+        
+                    <div class="flex flex-col space-y-8 justify-between font-second ">
+                        <div>
+                            <h2 class="text-hover font-body text-5xl text-secondary-100 tracking-wide pb-4 text-start selection:bg-primary-200 selection:text-pink" id="section6">Contact Me</h2>
+                            <p class=" max-w-4xl pt-2 text-secondary-200 text-lg leading-light text-start selection:bg-secondary-100 selection:text-pink">I'm looking for new opportunities and I'm open to collaborations. However, if you have any questions, requests or just want to say hi, don't hesitate to give me a message.</p>
+                        </div>
+                        <div>
+                            <div class="inline-flex space-x-2 items-center pt-8">
+                                <svg class="text-secondary-100 h-6 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 17l-5 4a2 2 0 01-2 0l-5-4a8 8 0 1112 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                  </svg>
+        
+                                  <span class="text-secondary-100 text-opacity-50 selection:bg-pink selection:text-secondary-100">Limerick, Ireland</span>
+                            </div>
+                        </div>
+                        <div>                      
+                            <div class="inline-flex space-x-2 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4 text-secondary-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v2a3 3 0 005 0v-2a9 9 0 10-9 9m5-1a9 9 0 01-5 1"/>
+                                  </svg>
+        
+                                  <span class="text-secondary-100 text-opacity-50 selection:bg-pink selection:text-secondary-100">bilyana.codes@gmail.com</span>
+                        </div>
+                    </div>
+
+                
+                    <div class="grid md:grid-cols-2 gap-x-10">
+
+
+                    <div class="container mx-auto my-32">
+                        <div>
+                
+                            <div class="bg-primary-100 relative shadow-xl ">
+                                <div class="flex justify-center">
+                                        <img src="./img/blah1.png" alt="" class="rounded-full mx-auto absolute -top-20 w-32 h-32 shadow-2xl border-4 border-primary-200">
+                                </div>
+                                
+                                <div class="mt-16">
+                                    <h1 class="font-body text-center text-3xl text-secondary-100">Bilyana Marinova</h1>
+                                    <p class="text-center text-sm text-secondary-200 font-second">Front-end Developer</p>
+                                    <p>
+                                        <span>
+                                            
+                                        </span>
+                                    </p>
+                                    <div class="my-5">
+                                        <div class="text-secondary-200 block text-center font-medium leading-6 px-6 py-3 bg-primary-200 tracking-wider">Let's connect</div>
+                                    </div>
+                                    <div class="flex justify-evenly my-5 font-body tracking-wide">
+                                        <a href="https://github.com/bilyanam/" class="bg text-sm text-secondary-100 w-full text-center py-3 hover:bg-pink hover:text-white hover:shadow-lg">GitHub</a>
+                                        <a href="https://www.linkedin.com/in/bilyana-marinova-6ab45b183" class="bg text-sm text-pink w-full text-center py-3 hover:bg-secondary-100 hover:text-white hover:shadow-lg">LinkedIn</a>
+                                        <a href="" class="bg text-sm text-secondary-100 w-full text-center py-3 hover:bg-pink hover:text-white hover:shadow-lg">Instagram</a>
+                                        <a href="https://www.behance.net/bilyana" class="bg text-sm text-pink w-full text-center py-3 hover:bg-secondary-100 hover:text-white hover:shadow-lg">Behance</a>
+                                    </div>
+                
+                            </div>
+                
+                        </div>
+                    </div>
     
-            
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-danger btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
-                </div>	
-                <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-danger btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
-                </div>	
-            </div>
-                
-        </div>
-    </div>
-
-    <div class="container text-center">
-        <h2>Hi. I'm <span>Bilyana</span>. I’m a web designer who loves to build human-friendly interfaces and digital experiences.</h2>
-    </div>
-                
-  
-    <div class="container">
-            <div class="row">
-               <div class="col-md-4 text-center">
-                  <h2>Development</h2>
-                  <p>Having hands on experience in creating innovative designs, I do offer design solutions which harness the new possibilities of internet presence.</p>
-               </div>
+                    
         
-               <div class="col-md-4 text-center">
-                  <h2>UX/UI Design</h2>
-                  <p>I make sure that every project is pixel perfect. I will accompany you from vision to the final product, providing you the best possible user experience. </p>
-               </div>
+                    <div class="space-x-4 flex flex-row md:hidden">
+                    <a href="https://www.linkedin.com/in/bilyana-marinova-6ab45b183"><svg class="h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#02de9a"><path d="M156.23893,0h-140.47786c-8.5944,0 -15.76107,7.16667 -15.76107,15.76107v140.47786c0,8.5944 7.16667,15.76107 15.76107,15.76107h140.47786c8.5944,0 15.76107,-7.16667 15.76107,-15.76107v-140.47786c0,-8.5944 -7.16667,-15.76107 -15.76107,-15.76107zM50.16667,143.33333h-28.66667v-78.83333h28.66667zM35.83333,55.17774c-8.5944,0 -14.33333,-5.73893 -14.33333,-12.9056c0,-7.86654 5.73893,-13.60547 14.33333,-13.60547c8.5944,0 14.33333,5.73893 14.33333,12.9056c0,7.86654 -5.73893,13.60547 -14.33333,13.60547zM150.5,143.33333h-28.66667v-43c0,-11.47786 -7.89453,-14.33333 -10.02213,-14.33333c-2.1556,0 -11.47787,1.42774 -11.47787,14.33333c0,1.42774 0,43 0,43h-28.66667v-78.83333h28.66667v11.47787c4.3112,-6.4668 11.47787,-11.47787 25.08333,-11.47787c13.60547,0 25.08333,10.75 25.08333,35.83333z"></path></g></g></svg></a>
+                    <a href="https://github.com/bilyanam"><svg class="h-6 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 172 172">
+                        <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                          <path d="M0 172V0h172v172z"/>
+                          <path d="M78 15a72 72 0 00-13 139v-16h-7c-10 0-14-8-15-13l-4-7-3-2 3-1c4 0 8 5 9 7 4 6 8 7 10 7l7-1c0-5 2-10 7-13-17-4-29-13-29-29 0-8 4-16 9-21l-2-11c0-2 0-7 2-11 0 0 10 0 20 9l14-2 14 2c10-9 20-9 20-9 2 4 2 9 2 11 0 6-1 9-2 11 5 5 9 12 9 21 0 16-12 25-29 29 5 3 8 10 8 16v24c29-10 50-37 50-68 0-43-37-77-80-72z" fill="#02de9a"/>
+                        </g>
+                      </svg>
+                      </a>
+                    <a href="instagram"><svg class="h-6 w-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 172 172">
+                        <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                          <path d="M0 172V0h172v172z"/>
+                          <path d="M57 22c-19 0-35 16-35 35v58c0 19 16 35 35 35h58c19 0 35-16 35-35V57c0-19-16-35-35-35zm72 14a7 7 0 110 14 7 7 0 010-14zM86 50a36 36 0 110 72 36 36 0 010-72zm0 15a22 22 0 100 43 22 22 0 000-43z" fill="#02de9a"/>
+                        </g>
+                      </svg>
+                      </a>
+                    </div>
         
-               <div class="col-md-4 text-center">
-                  <h2>Planning</h2>
-                  <p>I seek to exceed your business goals through focused strategic thinking and attention to details. I help you craft all your ideas from zero into a digital project identifying all your needs.</p>
-               </div>
-            </div>
-         </div>
-                
-    <!-- Begin footer-->
-    <footer class="container-fluid-portfolio">
-
-        <h4>Bilyana Marinova: Web Designer</h4>
-        <h5>Creative vision and digital experience</h5>
-
-        <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="portfolio/">Portfolio</a></li>
-            <li><a href="contact/">Contact</a></li>
-        </ul>
+                    </div>
+                    <div class=" bg-primary-100 rounded-xl shadow-lg p-8">
+                        <form action="https://formspree.io/f/xknkbbva" method="post" class="flex flex-col space-y-4">
+                            <div>
+                                <input type="text" id="name" name="name" required placeholder="Name" class="ring-1 ring-gray-300 w-full rounded-md bg-primary-100 bg-opacity-95 px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-secondary-100 text-secondary-200  selection:bg-secondary-100 selection:text-pink"/>
         
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" id="email" name="email" required placeholder="your@email.com" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-secondary-100 text-secondary-200 bg-primary-100 bg-opacity-45 selection:bg-secondary-100 selection:text-pink"/>
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" id="subject" name="subject" required placeholder="Subject" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-secondary-100 text-secondary-200 bg-primary-100 bg-opacity-95 selection:bg-secondary-100 selection:text-pink"/>
+                            </div>
+                            <div class="mt-3">
+                                <textarea placeholder="Type your message here" id="message" name="message" required  rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-secondary-100 text-secondary-200 bg-primary-100  selection:bg-secondary-100 selection:text-pink"></textarea>
+                            </div>
+                            <button class="inline-block self-end bg-secondary-100 text-primary-100 font-body rounded-lg px-6 py-2 uppercase text-sm mt-4">send message</button>
+                        </form>    
+              
+                </div>
+                                        <!-- Contact form ends here-->          
+    
 
-        <ul class="footer-icons">
-            <li>
-                <a href="https://www.linkedin.com/in/bilyana-marinova-6ab45b183/">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
+        </main>
 
-            <li>
-                <a href="https://github.com/bilyanam">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>	<script src="app.js"></script>
 
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            
-         </ul>                
-        
-        <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
-    </footer>
-	<!-- End footer -->
-        
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <style>
+        .loader_bg{
+            position: fixed;
+            z-index: 999999;
+            background: #1d1d1d;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loader{
+            border: 0 solid transparent;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50vh - 75px);
+            left: calc(50vw - 75px);
+
+        }
+
+        .loader:before, .loader:after{
+            content:'';
+            border: 1em solid #DE0246;
+            border-radius: 50%;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: loader 2s linear infinite;
+            opacity: 0;
+        }
+
+        .loader:before{
+            animation-delay: 5s;
+        }
+        @keyframes loader{
+            0%{
+                transform: scale(0);
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <script>
+        function _toArray(arr) {
+            return Array.isArray(arr) ? arr : Array.from(arr)
+        }
+        function makeSpans(selector) {
+            var _document$querySelect = document.querySelectorAll(selector)
+            var _document$querySelect2 = _toArray(_document$querySelect)
+            var elements = _document$querySelect2.slice(0)
+            return elements.map(function (element) {
+                var text = element.innerText.split('')
+                var spans = text.map(function (letter){
+                    return '<span>' + letter + '</span>'
+                }).join('')
+                return element.innerHTML = spans
+            })
+        }
+        makeSpans('h2')
+    </script>
+
+
+
+    <!-- Cookies -->
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-      "palette": {
+    "palette": {
         "popup": {
-          "background": "#000"
+        "background": "#171717"
         },
         "button": {
-          "background": "#f1d600"
+        "background": "#DE0246"
         }
-      },
-      "content": {
-        "href": "http://bilyanam.github.io/privacy.html"
-      }
+    },
+    "content": {
+        "href": "https://bilyanam.github.io/privacy.html"
+    }
     });
     </script>
-  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+
 </body>
 </html>
