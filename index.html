@@ -165,38 +165,14 @@
         <main class="sm:px-2 md:px-16 py-6 md:col-span-2">
 
 
-            <header id="section1">
+            <header id="section1" class="">
                 <h2 class="text-4xl md:text-8xl text-secondary-200 font-body mt-12 selection:bg-primary-100 selection:text-secondary-100 text-hover text-center md:text-left">Hi,</h2>
-                <h2 class="text-4xl md:text-8xl text-secondary-200 font-body selection:bg-primary-100 selection:text-secondary-100 text-hover text-center md:text-left">I'm &nbsp; ilyana</h2>
-                <h3 class="selection:bg-primary-100 selection:text-pink/80 text-2lg md:text-6xl text-secondary-100 font-second font-extralight mt-5 text-center md:text-left">Front-end Developer</h3>
-                <!-- svg for md screen-->
-                <svg class="hidden md:block relative left-32 bottom-52" width="100" height="123" viewBox="0 0 44 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 65V20h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 2 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H6zm5-25h12c7 0 10-2 10-8 0-5-3-8-10-8H11v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H11v17z" fill="#02DE9A"/>
-                    <path d="M8 66V21h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 1 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H8zm5-25h12c7 0 10-3 10-8s-3-8-10-8H13v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H13v17z" fill="#DE0246"/>
-                  </svg>
-                                  
-                    <!-- svg for sm screen-->
-                    <svg class="md:hidden relative left-32 bottom-24" width="40" height="50" viewBox="0 0 44 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 65V20h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 2 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H6zm5-25h12c7 0 10-2 10-8 0-5-3-8-10-8H11v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H11v17z" fill="#02DE9A"/>
-                        <path d="M8 66V21h18c4 0 8 1 10 3 3 2 4 5 4 9 0 2 0 4-2 6l-5 4c3 1 5 2 6 4 2 1 2 4 2 7 0 4-1 7-4 9-2 2-6 3-11 3H8zm5-25h12c7 0 10-3 10-8s-3-8-10-8H13v16zm0 21h13c7 0 10-3 10-8 0-6-3-9-10-9H13v17z" fill="#DE0246"/>
-                      </svg>
-                      
-                        <style>
-                            .text-hover span {
-                            transition: color 1s;
-                            transition-delay: 200ms;
+                <h2 class="text-4xl md:text-8xl text-secondary-200 font-body selection:bg-primary-100 selection:text-secondary-100 text-hover text-center md:text-left">I'm Bilyana</h2>
+                <h3 class="selection:bg-primary-100 selection:text-pink/80 text-2lg md:text-6xl text-secondary-100 font-second font-extralight mt-5 text-center md:text-left">Front-end Developer</h3>            
+            </header>
 
-                        }
 
-                        .text-hover span:hover {
-                            transition: color 0s;
-                            color: #DE0246;
-                        }
-
-                        </style>
-
-                        </header>
-            <div class="flex md:justify-start justify-center">
+            <div class="flex md:justify-start justify-center md:mt-20">
                 <a href="#section6" class="py-4 px-6 text-sm cursor-pointer tracking-wider text-secondary-100 md:text-lg font-second md:border-2 border-secondary-100  md:hover:bg-secondary-100 md:hover:text-pink  font-semibold md:hover:shadow-inner ease-out duration-500 md:hover:scale-110 selection:bg-primary-100 selection:text-pink">Contact Me!</a>
             </div>
 
@@ -223,7 +199,7 @@
               </div>
 
               <div>
-                <h4 class="md:text-xl mt-14 text-secondary-200 font-second selection:bg-pink selection:text-secondary-100">What do I do, you ask?</h4>
+                <h4 class="md:text-xl mt-16 text-secondary-200 font-second selection:bg-pink selection:text-secondary-100">What do I do, you ask?</h4>
 
                 <div class="mt-8 grid md:grid-cols-3 gap-10">
                     <!-- Cards go here -->
@@ -507,6 +483,20 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>	
 
+        <style>
+            .text-hover span {
+            transition: color 1s;
+            transition-delay: 200ms;
+
+        }
+
+        .text-hover span:hover {
+            transition: color 0s;
+            color: #DE0246;
+        }
+
+        </style>
+
     <style>
         .loader_bg{
             position: fixed;
@@ -567,7 +557,6 @@
     });
 </script>
 
-
     <script>
         function _toArray(arr) {
             return Array.isArray(arr) ? arr : Array.from(arr)
@@ -586,7 +575,6 @@
         }
         makeSpans('h2')
     </script>
-
 
 
     <!-- Cookies -->
