@@ -51,3 +51,45 @@ back2Top.addEventListener('click', (e) => {
         smoothScroll('html', 1000);
     }
 });
+
+function check() {
+    if (document.getElementById('bio1').checked) {
+        document.getElementById('ifBio1').style.display = 'block';
+    }
+    else document.getElementById('ifBio1').style.display = 'none';
+
+    if (document.getElementById('bio2').checked) {
+        document.getElementById('ifBio2').style.display = 'block';
+    }
+    else document.getElementById('ifBio2').style.display = 'none';
+
+    if (document.getElementById('bio3').checked) {
+        document.getElementById('ifBio3').style.display = 'block';
+    }
+    else document.getElementById('ifBio3').style.display = 'none';
+}
+
+
+    const btn = document.querySelector('button.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle("hidden");
+    });
+
+        function _toArray(arr) {
+            return Array.isArray(arr) ? arr : Array.from(arr)
+        }
+        function makeSpans(selector) {
+            var _document$querySelect = document.querySelectorAll(selector)
+            var _document$querySelect2 = _toArray(_document$querySelect)
+            var elements = _document$querySelect2.slice(0)
+            return elements.map(function (element) {
+                var text = element.innerText.split('')
+                var spans = text.map(function (letter){
+                    return '<span>' + letter + '</span>'
+                }).join('')
+                return element.innerHTML = spans
+            })
+        }
+        makeSpans('h2')
