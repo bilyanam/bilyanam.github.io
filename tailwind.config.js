@@ -2,7 +2,16 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
+    extend: {    
+      backgroundSize: {
+      '100-200': '110% 220%',
+    },
+
+      backgroundImage: {
+        none: 'none',
+        'gradient-blue/pink': 'linear-gradient(to bottom, #02de9a 50%, #DE0246 50%)',
+      },
+  
       boxShadow: {
         '3xl': '0 4px 6px -1px rgba(2, 222, 154, 1)',
         'inner1': 'inset 0 4px 6px -1px rgba(222, 2, 70, 1)',
