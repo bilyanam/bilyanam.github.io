@@ -6,6 +6,7 @@ module.exports = {
       boxShadow: {
         '3xl': '0 4px 6px -1px rgba(2, 222, 154, 1)',
         'inner1': 'inset 0 4px 6px -1px rgba(222, 2, 70, 1)',
+        '3p': '0 4px 6px -1px rgba(222, 2, 70, 1)'
       },  
       zIndex: {
         '100': 100,
