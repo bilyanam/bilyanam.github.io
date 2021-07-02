@@ -4,7 +4,7 @@ function init(){
 
     gsap.from('#fade', {duration:2, opacity:0, 
         stagger: {
-            each: 0.1
+            each: 0.3
         },
         scrollTrigger: {
         trigger: '#fade',
