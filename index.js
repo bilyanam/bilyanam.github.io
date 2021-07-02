@@ -1,3 +1,25 @@
+gsap.registerPlugin(ScrollTrigger);
+
+function init(){
+
+    gsap.from('#fade', {duration:2, opacity:0, scrollTrigger: {
+        trigger: '#fade',
+        start: "top 90%",
+        end: "bottom bottom-=150",
+        scrub: true,
+    }});
+    gsap.from('#fade1', {duration:1, opacity:0, scrollTrigger: {
+        trigger: '#fade1',
+        start: "top 90%",
+        end: "bottom bottom-=300",
+        scrub: true,
+    }});
+}
+
+window.addEventListener('load', function(){
+    init();
+});
+
 const back2Top = document.querySelector('#back2Top');
 const htmlEl = document.querySelector("html");
 htmlEl.style.scrollBehavior = "smooth";
@@ -93,3 +115,4 @@ function check() {
             })
         }
         makeSpans('h2')
+

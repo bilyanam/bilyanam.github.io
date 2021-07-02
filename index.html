@@ -31,7 +31,7 @@
     </style>
 
 </head>
-<body class="bg-primary-100">
+<body class="box1 bg-primary-100">
 
     <div class="loader_bg">
         <div class="loader"></div>
@@ -202,12 +202,12 @@
               </div>
 
               <div>
-                <h4 class="md:text-xl mt-16 text-secondary-200 font-second selection:bg-pink selection:text-secondary-100">What do I do, you ask?</h4>
+                <h4 id="fade1" class="md:text-xl mt-16 text-secondary-200 font-second selection:bg-pink selection:text-secondary-100">What do I do, you ask?</h4>
 
-                <div class="mt-8 grid lg:grid-cols-3 gap-10 mr-2 md:mr-0">
+                <div id="fade" class="mt-8 grid lg:grid-cols-3 gap-10 mr-2 md:mr-0">
                     <!-- Cards go here -->
 
-                    <div id="project01" class="bg-primary-200 rounded-md overflow-hidden shadow p-2 hover:shadow-3xl">
+                    <div class="bg-primary-200 rounded-md overflow-hidden shadow p-2 hover:shadow-3xl">
                         <span class="block text-2xl text-secondary-100 font-body selection:bg-primary-200 selection:text-pink">Development</span>
                         <span class="block text-lg text-secondary-200 font-second mt-2 selection:bg-secondary-100 selection:text-pink">Having hands on experience in creating innovative designs, I do offer design solutions which harness the new possibilities of internet presence.</span>
                     </div>
@@ -286,7 +286,7 @@
 
                                 <!-- van gogh starts here -->
 
-                                <div class="md:pl-3">
+                                <div class=" md:pl-3">
                                     <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div">
                                         <div>
                                         <div  class="w-full image-cover rounded-t-md"></div>
@@ -422,7 +422,7 @@
                                         </span>
                                     </p>
                                     <div class="my-5">
-                                        <div class="text-secondary-200 block text-center font-medium leading-6 px-6 py-3 bg-primary-200 tracking-wider selection:bg-secondary-200 selection:text-pink">Let's connect</div>
+                                        <div class="text-secondary-200 block text-center font-medium leading-6 px-6 py-3 bg-primary-200 tracking-wider selection:bg-secondary-100 selection:text-pink">Let's connect</div>
                                     </div>
                                     <div class="flex justify-evenly my-5 font-body tracking-wide space-x-3 md:space-x-0">
                                         <a href="https://github.com/bilyanam/" target="GitHub" class="bg text-sm text-secondary-100 w-full text-center py-3 hover:bg-pink hover:text-white hover:shadow-lg selection:bg-secondary-100 selection:text-pink">GitHub</a>
@@ -439,7 +439,7 @@
                     
         
                     </div>
-                    <div class=" bg-primary-100 rounded-xl shadow-lg md:pt-8 md:px-8 md:pb-2">
+                    <div class="section2 bg-primary-100 rounded-xl shadow-lg md:pt-8 md:px-8 md:pb-2">
                         <form action="https://formspree.io/f/xzbkoewy" method="POST" class="flex flex-col space-y-4">
                                 <input type="text" id="name" name="name" required placeholder="Name" class="ring-1 ring-gray-300 w-full rounded-md bg-primary-100 bg-opacity-95 px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-secondary-100 text-secondary-200  selection:bg-secondary-100 selection:text-pink">
 
@@ -473,6 +473,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
         <script src="index.js"></script>
+       <!-- <script src="app.js"></script> -->
 
         <style>
             .text-hover span {
