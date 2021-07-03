@@ -19,6 +19,7 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/line-clamp": "^0.2.1",
+    "locomotive-scroll": "^4.1.1",
     "tailwindcss-children": "^2.1.0",
     "tailwindcss-transforms": "^2.2.0"
   }
