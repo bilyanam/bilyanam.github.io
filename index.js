@@ -87,7 +87,7 @@ function init(){
         scrollTrigger: {
         trigger: ".fade4",
         start: "top 90%",
-        end: "bottom bottom-=250",
+        end: "bottom bottom-=200",
         scrub: true,
     }});
     gsap.from(".fade5", {duration:1, opacity:0,
