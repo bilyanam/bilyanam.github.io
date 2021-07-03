@@ -4,7 +4,7 @@ function init(){
 
     gsap.from('#fade', {duration:2, opacity:0, 
         stagger: {
-            each: 0.3
+            each: 0.2
         },
         scrollTrigger: {
         trigger: '#fade',
@@ -21,12 +21,72 @@ function init(){
     }});
     gsap.to('#scroll', {duration:2, opacity:0, 
         stagger: {
-            each: 0.1
+            each: 0.5
         },
         scrollTrigger: {
         trigger: '#scroll',
-        start: "top 70%",
+        start: "top 50%",
         end: "bottom bottom-=150",
+        scrub: true,
+    }});
+    gsap.from(".fade", {duration:1, opacity:0,
+        stagger: {
+            each: 0.2
+        },
+        scrollTrigger: {
+        trigger: ".fade",
+        start: "top 80%",
+        end: "bottom bottom-=300",
+        scrub: true,
+    }});
+    gsap.from(".fade1", {duration:1, opacity:0,
+        stagger: {
+            each: 0.2
+        },
+        scrollTrigger: {
+        trigger: ".fade1",
+        start: "top 80%",
+        end: "bottom bottom-=250",
+        scrub: true,
+    }});
+    gsap.from(".fade2", {duration:1, opacity:0,
+        stagger: {
+            each: 0.5
+        },
+        scrollTrigger: {
+        trigger: ".fade2",
+        start: "top 85%",
+        end: "bottom bottom-=250",
+        scrub: true,
+    }});
+    gsap.from(".fade3", {duration:1, opacity:0,
+        stagger: {
+            each: 0.3
+        },
+        scrollTrigger: {
+        trigger: ".fade3",
+        start: "top 85%",
+        end: "bottom bottom-=350",
+        scrub: true,
+    }});
+    gsap.from(".fade4", {duration:1, opacity:0,
+        stagger: {
+            each: 0.5
+        },
+        scrollTrigger: {
+        trigger: ".fade4",
+        start: "top 90%",
+        end: "bottom bottom-=250",
+        scrub: true,
+    }});
+    gsap.from(".fade5", {duration:1, opacity:0,
+        stagger: {
+            each: 0.5
+        },
+        scrollTrigger: {
+        trigger: ".fade5",
+        start: "top 90%",
+        end: "bottom bottom-=100",
         scrub: true,
     }});
 
@@ -132,3 +192,24 @@ function check() {
         }
         makeSpans('h2')
 
+gsap.from(".up", {
+    scrollTrigger: {
+        trigger: ".up",
+        start: "top 100%",
+        end: "top 20%",
+       toggleActions: "restart none reverse none"
+    },
+    y: 50,
+    duration: 0.2,
+    marker: true
+});
+// gsap.from(".left", {
+//     scrollTrigger: {
+//         trigger: ".left",
+//         start: "top 90%",
+//         end: "top 30%",
+//        toggleActions: "restart none reverse none"
+//     },
+//     x: 100,
+//     duration: 0.3,
+// });
