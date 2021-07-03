@@ -2,9 +2,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function init(){
 
-    gsap.from('#fade', {duration:2, opacity:0, 
+    gsap.from('#fade', {duration:2, opacity:0, x: 20,
         stagger: {
-            each: 0.2
+            each: 0.5
         },
         scrollTrigger: {
         trigger: '#fade',
@@ -12,14 +12,14 @@ function init(){
         end: "bottom bottom-=150",
         scrub: true,
     }});
-    gsap.from('#fade1', {duration:1, opacity:0,
+    gsap.from('#fade1', {duration:1, opacity:0, y: -20,
         scrollTrigger: {
         trigger: '#fade1',
         start: "top 90%",
         end: "bottom bottom-=300",
         scrub: true,
     }});
-    gsap.to('#scroll', {duration:2, opacity:0, 
+    gsap.to('#scroll', {duration:2, opacity:0,
         stagger: {
             each: 0.5
         },
@@ -29,7 +29,7 @@ function init(){
         end: "bottom bottom-=150",
         scrub: true,
     }});
-    gsap.from(".fade", {duration:1, opacity:0,
+    gsap.from(".fade", {duration:1, opacity:0,  y: 40,
         stagger: {
             each: 0.2
         },
@@ -39,9 +39,20 @@ function init(){
         end: "bottom bottom-=300",
         scrub: true,
     }});
-    gsap.from(".fade1", {duration:1, opacity:0,
+    gsap.from(".fadex", {duration:1, opacity:0,  x: -20,
         stagger: {
             each: 0.2
+        },
+        scrollTrigger: {
+        trigger: ".fadex",
+        start: "top 80%",
+        end: "bottom bottom-=300",
+        scrub: true,
+    }});
+
+    gsap.from(".fade1", {duration:1, opacity:0,  y: 40,
+        stagger: {
+            each: 0.5
         },
         scrollTrigger: {
         trigger: ".fade1",
@@ -49,7 +60,7 @@ function init(){
         end: "bottom bottom-=250",
         scrub: true,
     }});
-    gsap.from(".fade2", {duration:1, opacity:0,
+    gsap.from(".fade2", {duration:1, opacity:0, y: 15,
         stagger: {
             each: 0.5
         },
@@ -69,7 +80,7 @@ function init(){
         end: "bottom bottom-=350",
         scrub: true,
     }});
-    gsap.from(".fade4", {duration:1, opacity:0,
+    gsap.from(".fade4", {duration:1, opacity:0, y: -10,
         stagger: {
             each: 0.5
         },
@@ -86,6 +97,37 @@ function init(){
         scrollTrigger: {
         trigger: ".fade5",
         start: "top 90%",
+        end: "bottom bottom-=100",
+        scrub: true,
+    }});
+    gsap.from(".fade-x", {duration:1, opacity:0,  y: 30,
+        stagger: {
+            each: 0.2
+        },
+        scrollTrigger: {
+        trigger: ".fade-x",
+        start: "top 80%",
+        end: "bottom bottom-=300",
+        scrub: true,
+    }});
+    gsap.from(".vang", {duration:0.5, opacity:0,  x: -40,
+        scrollTrigger: {
+        trigger: ".vang",
+        start: "top 80%",
+        end: "bottom bottom-=100",
+        scrub: true,
+    }});
+    gsap.from(".hero", {duration:0.5, opacity:0,  x: 40,
+        scrollTrigger: {
+        trigger: ".hero",
+        start: "top 80%",
+        end: "bottom bottom-=100",
+        scrub: true,
+    }});
+    gsap.from(".img", {duration:1, opacity:0,  y: 30,
+        scrollTrigger: {
+        trigger: ".img",
+        start: "top 80%",
         end: "bottom bottom-=100",
         scrub: true,
     }});
@@ -203,13 +245,3 @@ gsap.from(".up", {
     duration: 0.2,
     marker: true
 });
-// gsap.from(".left", {
-//     scrollTrigger: {
-//         trigger: ".left",
-//         start: "top 90%",
-//         end: "top 30%",
-//        toggleActions: "restart none reverse none"
-//     },
-//     x: 100,
-//     duration: 0.3,
-// });
