@@ -124,7 +124,7 @@ function init(){
         end: "bottom bottom-=100",
         scrub: true,
     }});
-    gsap.from(".img", {duration:1, opacity:0,  y: 30,
+    gsap.from(".img", {duration:1, opacity:0,  y: -30,
         scrollTrigger: {
         trigger: ".img",
         start: "top 80%",
