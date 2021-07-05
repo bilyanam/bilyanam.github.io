@@ -255,6 +255,6 @@ gsap.from(".up", {
 });
 
 const scroll = new SmoothScroll('.navbar a[href*="#"]', {
-    speed: 500
+    speed: 800
 });
 
