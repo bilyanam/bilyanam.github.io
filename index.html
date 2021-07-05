@@ -10,7 +10,6 @@
     <title>Bilyana | Front-end Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/build/tailwind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
 
         <!-- Link to Insites cookie privacy message  -->
@@ -35,7 +34,7 @@
 <body class="smoothScroll bg-primary-100">
 
                             <!-- nav for small screen -->
-    <nav class="md:hidden bg-primary-100">
+    <nav class="navbar md:hidden bg-primary-100">
         <div class="mx-auto px-4">
             <div class="flex justify-between">
                 <div>
@@ -55,8 +54,8 @@
         </div>
 
         <div class="mobile-menu hidden">
-            <a href="#section2" class="block py-2 px-4 text-sm text-secondary-200 font-second">About</a>
-            <a href="#section3" class="block py-2 px-4 text-sm text-secondary-200 font-second">Portfolio</a>
+            <a href="#section2" class="block py-2 px-4 text-sm text-secondary-200 font-second">Portfolio</a>
+            <a href="#section3" class="block py-2 px-4 text-sm text-secondary-200 font-second">About</a>
             <a href="#section4" class="block py-2 px-4 text-sm text-secondary-200 font-second">Blog</a>
             <a href="#section5" class="block py-2 px-4 text-sm text-secondary-200 font-second">Contact</a> 
         </div>
@@ -67,7 +66,7 @@
                             <!-- nav for big screen-->
     <div class="grid md:grid-rows-1 grid-flow-col">
         <div class="ml-2 md:row-span-1 flex">
-            <nav>
+            <nav class="navbar">
                 <div class="hidden md:block sticky top-6">
                     <a href="bilyanam.github.io">
                     <img class="h-8 md:h-12 w-auto pt-1 mt-4 ml-8 md:ml-14" src="img/website-logo.png" alt="logo">
@@ -84,22 +83,8 @@
                             Home
                         </a>
                     </li>
-
-
                     <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
                         <a href="#section2" class="px-5 flex">
-                            <svg class="w-5 h-6 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 172 172">
-                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
-                                  <path d="M0 172V0h172v172z"/>
-                                  <path d="M29 22c-8 0-15 6-15 14v129l29-29h100c8 0 15-6 15-14V36c0-8-7-14-15-14zm0 14h114v86H37l-8 8zm57 7c-15 0-21 13-21 22h14c0-2 1-8 7-8 7 0 7 7 7 8 0 7-14 21-14 28h14c0-7 14-18 14-29 1-10-8-21-21-21zm-7 57v15h14v-15z" fill="#02de9a"/>
-                                </g>
-                              </svg>
-                            About
-                        </a>
-                    </li>
-
-                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
-                        <a href="#section3" class="px-5 flex">
                             <svg class="w-5 h-6 mr-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 172 172">
                                 <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
                                   <path d="M0 172V0h172v172z"/>
@@ -107,6 +92,17 @@
                                 </g>
                               </svg>
                             Portfolio
+                        </a>
+                    </li>
+                    <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
+                        <a href="#section3" class="px-5 flex">
+                            <svg class="w-5 h-6 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 172 172">
+                                <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+                                  <path d="M0 172V0h172v172z"/>
+                                  <path d="M29 22c-8 0-15 6-15 14v129l29-29h100c8 0 15-6 15-14V36c0-8-7-14-15-14zm0 14h114v86H37l-8 8zm57 7c-15 0-21 13-21 22h14c0-2 1-8 7-8 7 0 7 7 7 8 0 7-14 21-14 28h14c0-7 14-18 14-29 1-10-8-21-21-21zm-7 57v15h14v-15z" fill="#02de9a"/>
+                                </g>
+                              </svg>
+                            About
                         </a>
                     </li>
                     <li class="py-4 hover:text-secondary-100 transition ease-out duration-200 transform hover:scale-110">
@@ -163,10 +159,17 @@
 
 
             <header id="section1">
-                <h2 class="text-5xl md:text-8xl text-secondary-200 font-body mt-12 selection:bg-primary-100 selection:text-secondary-100 text-hover text-center md:text-left">Hi,</h2>
-                <h2 class="text-5xl md:text-8xl text-secondary-200 font-body selection:bg-primary-100 selection:text-secondary-100 text-hover text-center md:text-left">I'm Bilyana</h2>
-                <h3 class="selection:bg-primary-100 selection:text-pink/80 text-2lg md:text-6xl text-secondary-100 font-second font-extralight mt-2 md:mt-5 text-center md:text-left">Front-end Developer</h3> 
+                <h2 class="text-5xl md:text-8xl text-secondary-200 font-body mt-12 selection:bg-primary-100 selection:text-secondary-100 text-center md:text-left">Hi,</h2>
+                <h2 class="text-5xl md:text-8xl text-secondary-200 font-body selection:bg-primary-100 selection:text-secondary-100 text-center md:text-left">I'm <span class="blah1 selection:bg-primary-100 selection:text-pink">B</span>ilyana</h2>
+                <h3 class="text-hover selection:bg-primary-100 selection:text-pink/80 text-2lg md:text-6xl text-secondary-100 font-second font-extralight mt-2 md:mt-5 text-center md:text-left">Front-end Developer</h3> 
             </header>
+
+            <style>
+                .blah1{
+                    color: #DE0246;
+                    text-shadow: 3px 3px #02de9a;
+                }
+            </style>
 
 
             <div class="flex md:justify-start justify-center md:mt-20">
@@ -223,8 +226,104 @@
         
             <!-- Cards end here -->
 
+
+            <!-- Portfolio starts here -->
+                <h2 class="fade1 text-hover text-6xl text-secondary-100 font-body mt-14 mb-8 selection:bg-primary-100 selection:text-pink" id="section2">My work</h2>
+                <p class="fade1 md:text-lg text-secondary-200 font-second mb-8 selection:bg-primary-100 selection:text-secondary-100">A small few projects I've worked on recently. More to come soon...</p>
+
+
+                <div class="mt-16 grid lg:grid-cols-2 gap-y-4 md:gap-y-2 md:gap-x-8">
+                               <!-- Cards go here -->
+
+                                <!-- van gogh starts here -->
+
+                                <div class="vang md:pl-3">
+                                    <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div">
+                                        <div>
+                                        <div class="w-full image-cover rounded-t-md"></div>
+                                        <div class="py-8 px-4 bg-primary-200 rounded-b-md group-hover:opacity-25 text-lg text-secondary-200 font-second mt-2 selection:bg-pink selection:text-secondary-100">
+                                            <span class="text-lg text-secondary-200 font-second">A <span class="text-pink selection:text-primary-100"><a href="https://bilyanam.github.io/portfolio/vincent-van-gogh/index.html" target="vincent-van-gogh">tribute</a></span> to the Dutch post-impressionist painter with an embedded YouTube video and set in the Google Merriweather font.
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="absolute opacity-0 group-hover:opacity-100">
+                                       <div class="pt-8 text-center hidden md:block">
+                                           <button class="text-center rounded-full h-24 w-24 bg-secondary-100 font-second text-base"><a href="https://bilyanam.github.io/portfolio/vincent-van-gogh/index.html" class="text-primary-100 selection:text-primary-100 uppercase" target="van gogh">View project</a></button>
+                                           </div>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                                <style>
+                                  .content-div{
+                                  background-image:url("./img/van-gogh.jpg");
+                                  background-repeat: no-repeat;
+                                  background-size: 450px, cover;
+                                }
+                                  .content-div:hover{
+                                    background-image:
+                                    linear-gradient(to right,
+                                    rgba(2, 222, 154, 0.601), rgba(222, 2, 70, 0.601) ),
+                                     url("./img/van-gogh.jpg");
+                                     background-size: 450px;
+                                    }
+                                
+                                    .image-cover  {
+                                      height:200px;
+                                    }
+
+                                  </style>
+
+                                  <!-- van gogh ends here -->
+
+                                                    <!-- hero blocks start here -->
+
+                                  <div class="hero lg:pr-3">
+                                    <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div1">
+                                        <div>
+                                        <div class="w-full image-cover rounded-t-md"></div>
+                                        <div class="pt-8 px-4 pb-12 bg-primary-200 rounded-b-md group-hover:opacity-25 text-lg text-secondary-200 font-second mt-6 selection:bg-pink selection:text-secondary-100">
+                                            <span class="text-lg text-secondary-200 font-second">A <span class="text-pink selection:text-primary-100"><a href="https://bilyanam.github.io/portfolio/hero-showcase/index.html" target="hero-blocks">gallery</a></span> of web page hero blocks with animated text, background images and videos, and tinted overlays.
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="absolute opacity-0 group-hover:opacity-100">
+                                       <div class="hidden md:block pt-8 text-center">
+                                           <button class="text-center rounded-full h-24 w-24 bg-secondary-100 font-second text-base"><a href="https://bilyanam.github.io/portfolio/hero-showcase/index.html" class="text-primary-100 selection:text-primary-100 uppercase" target="van gogh">View project</a></button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                                <style>
+                                  .content-div1{
+                                  background-image:url("./img/hero-showcase-2.jpg");
+                                  background-repeat: no-repeat;
+                                  background-size: 490px, cover;
+                                }
+                                  .content-div1:hover{
+                                    background-image:
+                                    linear-gradient(to right,
+                                    rgba(2, 222, 154, 0.601), rgba(222, 2, 70, 0.601) ),
+                                     url("./img/hero-showcase-2.jpg");
+                                     background-size: 490px;
+                                    }
+                                
+                                    .image-cover  {
+                                      height:200px;
+                                    }
+
+                                  </style>
+
+                                            <!-- hero blocks ends here -->
+
+            </div>
+
+
+                        <!-- cards ends here -->
+
                         <!-- About me starts here -->
-                        <h2 class="fade text-hover text-4xl text-secondary-100 font-body mt-14 selection:bg-primary-100 selection:text-pink" id="section2 fade1">And if you want to know a bit about me...</h2>
+                        <h2 class="fade text-hover text-4xl text-secondary-100 font-body mt-14 selection:bg-primary-100 selection:text-pink" id="section3">And if you want to know a bit about me...</h2>
 
                         <div class="pt-8">
                             <h3 class="fadex text-sm text-secondary-200 font-second selection:bg-pink selection:text-primary-100 mt-1 mb-2">Choose bio length:</h3>
@@ -272,100 +371,6 @@
 
             </div>
 
-            <!-- Portfolio starts here -->
-                <h2 class="fade1 text-hover text-6xl text-secondary-100 font-body mt-14 mb-8 selection:bg-primary-100 selection:text-pink" id="section3">My work</h2>
-                <p class="fade1 md:text-lg text-secondary-200 font-second mb-8 selection:bg-primary-100 selection:text-secondary-100">A small few projects I've worked on recently. More to come soon...</p>
-
-
-                <div class="mt-16 grid lg:grid-cols-2 gap-y-4 md:gap-y-2 md:gap-x-8">
-                               <!-- Cards go here -->
-
-                                <!-- van gogh starts here -->
-
-                                <div class="vang md:pl-3">
-                                    <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div">
-                                        <div>
-                                        <div class="w-full image-cover rounded-t-md"></div>
-                                        <div class="py-8 px-4 bg-primary-200 rounded-b-md group-hover:opacity-25 text-lg text-secondary-200 font-second mt-2 selection:bg-pink selection:text-secondary-100">
-                                            <span class="text-lg text-secondary-200 font-second">A <span class="text-pink selection:text-primary-100"><a href="https://bilyanam.github.io/portfolio/vincent-van-gogh/index.html" target="vincent-van-gogh">tribute</a></span> to the Dutch post-impressionist painter with an embedded YouTube video and set in the Google Merriweather font.
-                                            </span>
-                                        </div>
-                                        </div>
-                                        <div class="absolute opacity-0 group-hover:opacity-100">
-                                       <div class="pt-8 text-center">
-                                           <button class="text-center rounded-full h-24 w-24 bg-secondary-100 font-second text-base"><a href="https://bilyanam.github.io/portfolio/vincent-van-gogh/index.html" class="text-primary-100 selection:text-primary-100 uppercase" target="van gogh">View project</a></button>
-                                           </div>
-                                    </div>
-                                    </div>
-                                   
-                                </div>
-                                <style>
-                                  .content-div{
-                                  background-image:url("./img/van-gogh.jpg");
-                                  background-repeat: no-repeat;
-                                  background-size: 450px, cover;
-                                }
-                                  .content-div:hover{
-                                    background-image:
-                                    linear-gradient(to right,
-                                    rgba(2, 222, 154, 0.601), rgba(222, 2, 70, 0.601) ),
-                                     url("./img/van-gogh.jpg");
-                                     background-size: 450px;
-                                    }
-                                
-                                    .image-cover  {
-                                      height:200px;
-                                    }
-
-                                  </style>
-
-                                  <!-- van gogh ends here -->
-
-                                                    <!-- hero blocks start here -->
-
-                                  <div class="hero lg:pr-3">
-                                    <div class="shadow-lg group container rounded-md bg-primary-200  max-w-sm flex justify-center items-center mx-auto content-div1">
-                                        <div>
-                                        <div class="w-full image-cover rounded-t-md"></div>
-                                        <div class="pt-8 px-4 pb-12 bg-primary-200 rounded-b-md group-hover:opacity-25 text-lg text-secondary-200 font-second mt-6 selection:bg-pink selection:text-secondary-100">
-                                            <span class="text-lg text-secondary-200 font-second">A <span class="text-pink selection:text-primary-100"><a href="https://bilyanam.github.io/portfolio/hero-showcase/index.html" target="hero-blocks">gallery</a></span> of web page hero blocks with animated text, background images and videos, and tinted overlays.
-                                            </span>
-                                        </div>
-                                        </div>
-                                        <div class="absolute opacity-0 group-hover:opacity-100">
-                                       <div class="pt-8 text-center">
-                                           <button class="text-center rounded-full h-24 w-24 bg-secondary-100 font-second text-base"><a href="https://bilyanam.github.io/portfolio/hero-showcase/index.html" class="text-primary-100 selection:text-primary-100 uppercase" target="van gogh">View project</a></button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                   
-                                </div>
-                                <style>
-                                  .content-div1{
-                                  background-image:url("./img/hero-showcase-2.jpg");
-                                  background-repeat: no-repeat;
-                                  background-size: 490px, cover;
-                                }
-                                  .content-div1:hover{
-                                    background-image:
-                                    linear-gradient(to right,
-                                    rgba(2, 222, 154, 0.601), rgba(222, 2, 70, 0.601) ),
-                                     url("./img/hero-showcase-2.jpg");
-                                     background-size: 490px;
-                                    }
-                                
-                                    .image-cover  {
-                                      height:200px;
-                                    }
-
-                                  </style>
-
-                                            <!-- hero blocks ends here -->
-
-            </div>
-
-
-                        <!-- cards ends here -->
                     <!-- Blog starts here (add a few articles) -->
 
                     <!-- Blog ends here -->
@@ -410,7 +415,12 @@
                                 </div>
                                 
                                 <div class="mt-16">
-                                    <h1 class="fade4 font-body text-center text-3xl text-secondary-100 selection:bg-primary-100 selection:text-pink">Bilyana Marinova</h1>
+                                    <h1 class="fade4 font-body text-center text-3xl text-secondary-100 selection:bg-primary-100 selection:text-pink blah">Bilyana Marinova</h1>
+                                    <style>
+                                        .blah{
+                                            text-shadow: 3px 3px #171717;
+                                        }
+                                    </style>
                                     <p class="fade4 text-center text-sm text-secondary-200 font-second selection:bg-primary-100 selection:text-secondary-100">Front-end Developer</p>
                                     <p>
                                         <span>
@@ -435,7 +445,7 @@
                     
         
                     </div>
-                    <div class="section2 bg-primary-100 rounded-xl shadow-lg md:pt-8 md:px-8 md:pb-2">
+                    <div class="section3 bg-primary-100 rounded-xl shadow-lg md:pt-8 md:px-8 md:pb-2">
                         <form action="https://formspree.io/f/xzbkoewy" method="POST" class="flex flex-col space-y-4">
                                 <input type="text" id="name" name="name" required placeholder="Name" class="fade4 ring-1 ring-gray-300 w-full rounded-md bg-primary-100 bg-opacity-95 px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-secondary-100 text-secondary-200  selection:bg-secondary-100 selection:text-pink">
 
@@ -467,7 +477,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="index.js"></script>
 
         <style>

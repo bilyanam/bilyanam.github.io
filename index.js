@@ -232,7 +232,7 @@ function check() {
                 return element.innerHTML = spans
             })
         }
-        makeSpans('h2')
+        makeSpans('.text-hover')
 
 gsap.from(".up", {
     scrollTrigger: {
@@ -244,4 +244,8 @@ gsap.from(".up", {
     y: 50,
     duration: 0.2,
     marker: true
+});
+
+const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+    speed: 500
 });
