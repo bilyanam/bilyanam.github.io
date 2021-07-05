@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
 function init(){
 
     gsap.from('#fade', {duration:2, opacity:0, x: 20,
@@ -15,8 +16,8 @@ function init(){
     gsap.from('#fade1', {duration:1, opacity:0, y: -20,
         scrollTrigger: {
         trigger: '#fade1',
-        start: "top 90%",
-        end: "bottom bottom-=300",
+        start: "top 80%",
+        end: "bottom bottom-=400",
         scrub: true,
     }});
     gsap.to('#scroll', {duration:2, opacity:0,
@@ -87,7 +88,14 @@ function init(){
         scrollTrigger: {
         trigger: ".fade4",
         start: "top 90%",
-        end: "bottom bottom-=200",
+        end: "bottom bottom-=150",
+        scrub: true,
+    }});
+    gsap.from(".fade-send", {duration:0.5, opacity:0, y: -10,
+        scrollTrigger: {
+        trigger: ".fade-send",
+        start: "top 99%",
+        end: "bottom bottom-=20",
         scrub: true,
     }});
     gsap.from(".fade5", {duration:1, opacity:0,
@@ -96,8 +104,8 @@ function init(){
         },
         scrollTrigger: {
         trigger: ".fade5",
-        start: "top 90%",
-        end: "bottom bottom-=100",
+        start: "top 95%",
+        end: "bottom bottom-=20",
         scrub: true,
     }});
     gsap.from(".fade-x", {duration:1, opacity:0,  y: 30,
@@ -249,3 +257,4 @@ gsap.from(".up", {
 const scroll = new SmoothScroll('.navbar a[href*="#"]', {
     speed: 500
 });
+
