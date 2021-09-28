@@ -8,7 +8,7 @@ module.exports = {
         robo: "'Roboto', sans-serif"
       },
       colors: {
-        header: '#5145e3',
+        header: '#5046e5',
         light: {
           100: '#6366f1',
           200: '#6064fa',
@@ -16,9 +16,9 @@ module.exports = {
           400: '#eaf6fb',
         },
         primary: '#ffffff',
-        secondary: '#f3f4f6',
+        secondary: '#6462ea',
         fontc: {
-          100: '#323433',
+          100: '#111827',
           200: '#383e41',
           300: '#000000',
         },
@@ -45,5 +45,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+  ],
 }
