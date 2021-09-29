@@ -5,14 +5,6 @@ btn.addEventListener('click', () => {
   menu.classList.toggle('hidden');
 });
 
-function mobileMenu() {
-  if (document.getElementById('menu').style.display == 'block') {
-      document.getElementById('menu').style.display = 'none' ;
-  } else { 
-    document.getElementById('menu').style.display = 'block' ;
-  }
-}
-document.getElementById('menuicon').addEventListener('click', mobileMenu);
 
 // window.addEventListener("scroll", (e) => {
 //   if (window.scrollY >= 10) {
