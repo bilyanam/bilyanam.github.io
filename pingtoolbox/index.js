@@ -5,17 +5,27 @@ btn.addEventListener('click', () => {
   menu.classList.toggle('hidden');
 });
 
+/* window.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.menu-btn')
+  const dropdown = document.querySelector('.dropdown')
 
-// window.addEventListener("scroll", (e) => {
-//   if (window.scrollY >= 10) {
-//     nav.classList.add("stickyNav");
-// 
-//     back2Top.classList.remove("hidden");
-//     back2Top.classList.add("block");
- //  } else {
-//     nav.classList.remove("stickyNav");
+  menuBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden')
+    dropdown.classList.toggle('flex')
+  })
+});
+
+
+ window.addEventListener("scroll", (e) => {
+   if (window.scrollY >= 10) {
+     nav.classList.add("stickyNav");
+ 
+     back2Top.classList.remove("hidden");
+     back2Top.classList.add("block");
+   } else {
+     nav.classList.remove("stickyNav");
     
-//     back2Top.classList.add("hidden");
-//     back2Top.classList.remove("block");
-//   }
-// });
+     back2Top.classList.add("hidden");
+     back2Top.classList.remove("block");
+   }
+ }); */
