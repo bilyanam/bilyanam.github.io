@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -5,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: "'Inter', sans-serif",
-        robo: "'Roboto', sans-serif"
+        robo: "'Roboto', sans-serif",
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         header: '#5046e5',
