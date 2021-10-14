@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [],
@@ -11,6 +12,8 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        'warm-gray': colors.warmGray,
+        teal: colors.teal,
         header: '#5046e5',
         light: {
           100: '#6366f1',
