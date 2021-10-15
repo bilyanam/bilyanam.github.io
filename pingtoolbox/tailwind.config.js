@@ -54,5 +54,14 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
-  ],
+    function ({addUtilities}) {
+      const extendUnderline = {
+          '.underline': {
+              'textDecoration': 'underline',
+              'text-decoration-color': 'indigo-800',
+          },
+      }
+      addUtilities(extendUnderline)
+  }
+]
 }
