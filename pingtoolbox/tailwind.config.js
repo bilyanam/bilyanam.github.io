@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         'warm-gray': colors.warmGray,
-        teal: colors.teal,
+        indigo: colors.indigo,
         header: '#5046e5',
         light: {
           100: '#6366f1',
