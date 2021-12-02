@@ -1,6 +1,26 @@
 {
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postscss": "^1.6.0",
+    "tailwindcss": "^2.2.2",
+    "tailwindcss-pseudo-elements": "^2.0.0"
+  },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.3.0",
-    "tailwindcss": "^2.2.19"
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "locomotive-scroll": "^4.1.1",
+    "tailwindcss-children": "^2.1.0",
+    "tailwindcss-transforms": "^2.2.0"
   }
 }
