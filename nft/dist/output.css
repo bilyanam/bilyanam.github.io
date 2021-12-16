@@ -1257,6 +1257,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.hover\:text-cyan-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(6 182 212 / var(--tw-text-opacity));
+}
+
+.hover\:decoration-cyan-700:hover {
+  -webkit-text-decoration-color: #0e7490;
+          text-decoration-color: #0e7490;
+}
+
 .focus\:border-indigo-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
