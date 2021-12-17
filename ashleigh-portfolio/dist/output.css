@@ -848,6 +848,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.decoration-cyan-400 {
+  -webkit-text-decoration-color: #22d3ee;
+          text-decoration-color: #22d3ee;
+}
+
 .opacity-0 {
   opacity: 0;
 }
