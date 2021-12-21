@@ -12,6 +12,9 @@ module.exports = {
       },
     },
   },
+    variants: {
+      display: ['responsive'],
+    },
     theme: {
     extend: {},
   },
